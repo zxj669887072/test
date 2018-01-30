@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>postForm</title>
+    <link rel="stylesheet" href="./post.css">
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script src="../Validform_v5.3.2.js"></script>
+    <style>
+        #myForm{width:500px;margin:0 auto;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="myForm">
+            <form action="" id="forminfo" class="demo">
+            <!-- <form action="" id="forminfo" enctype="multipart/form-data"> -->
+                <p><label >username: <input type="text" id="userName" name="username" datatype="/^(([a-z]+[0-9]+)|([0-9]+[a-z]+))[a-z0-9]*$/" errormsg="请输入字母和数字组合" nullmsg="请输入用户名！" placeholder="username"></label></p>
+
+                <p><label >password: <input type="password" id="psd"name="password" datatype="*6-20"  nullmsg="请输入密码！"></label></p>
+
+                <p><label >phone: <input type="text" id="mobile" name="mobile" datatype="m"  nullmsg="请输入手机号"></label></p>
+
+                <button type="button" name="button" class="btn">提交</button>
+                <!-- <button type="button" >提交</button> -->
+            </form>
+        </div>      
+    </div>
+    <script>      
+
+        var valid = $(".demo").Validform({
+            btnSubmit:".btn",
+            tiptype:3,
+            tipSweep:true,
+            showAllError:true,
+            // ajaxPost:true,
+            callback:function(data){
+                console.log(data);
+                $.ajax({
+                    url:"http://www.bianxiong.com/portal/index/testajax.html",
+                    data:{
+                        username:$("#userName").val(),
+                        password:$("#password").val(),
+                        mobile:$("#mobile").val()
+                    },
+                    type:"post",
+                    success:function(data){
+
+                    },
+                    error:function(xhr,status,err){
+                        console.log(xhr,status,err)
+                    }
+                });
+                return false;
+            }
+        });
+
+        /*var valid = $(".demo").Validform({
+            btnSubmit:".btn",
+            tiptype:3,
+            tipSweep:true,
+            showAllError:true,
+            // ajaxPost:true,
+            beforeSubmit:function(curform){
+                console.log(curform);
+                $.ajax({
+                    url:"http://www.bianxiong.com/portal/index/testajax.html",
+                    data:{
+                        username:$("#userName").val(),
+                        password:$("#password").val(),
+                        mobile:$("#mobile").val()
+                    },
+                    type:"post",
+                    success:function(data){
+
+                    },
+                    error:function(xhr,status,err){
+                        console.log(xhr,status,err)
+                    }
+                });
+                return false;
+            },
+            callback:function(form){
+                return false;
+            }
+        });*/
+        /*
+            如果不传输数据的话
+            post和get方法唯一区别就是
+            xhr.open("POST",url,true);
+            
+            传输数据
+            post和get的区别为
+
+            get
+                xhr.open("GET","url?参数=参数值&参数2=参数2值",true);
+                xhr.send();
+            post 
+                xhr.open("POST",url,true);
+                xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                xhr.send("参数=参数值&参数2=参数2值");
+
+        */
+        var form = document.getElementById("forminfo");console.log(form)
+        var btn = form.elements["button"];
+        btn.onclick = function(){      
+           
+            // alert(1);
+            /*var username = form.elements["username"].value;
+            var password = form.elements["password"].value;
+            var mobile = form.elements["mobile"].value;
+
+            var xhr = new XMLHttpRequest();
+            var data = new FormData(form);
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4 && xhr.status === 200){
+                    alert(xhr.responseText)
+                }
+            };
+            xhr.open('post','http://www.bianxiong.com/portal/index/testajax.html',true);
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            xhr.send('username='+username+'&password='+password+'&mobile='+mobile); */
+        }; 
+    </script>
+</body>
+</html>

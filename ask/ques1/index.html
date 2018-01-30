@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading</title>
+    <style>
+        #loading{position: absolute;top:0;left:0;right:0;bottom:0;z-index: 2;background:#999;display: none;}
+        #loading .loading-con{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -40px;
+            width: 96px;
+            height: 96px;
+        }
+        #loading .loading-circle {
+            width: 80px;
+            height: 80px;
+            border-top: 8px solid #11994b;
+            border-right: 8px solid #f2a808;
+            border-bottom: 8px solid #2399e7;
+            border-left: 8px solid #c0392b;
+            border-radius: 50%; 
+            -webkit-animation: spin 1s infinite linear; 
+                    animation: spin 1s infinite linear;
+        }
+        .loading-con img {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        @-webkit-keyframes spin{
+            from{-webkit-transform:rotate(0);transform:rotate(0);}
+            to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+        }
+        @keyframes spin{
+            from{-webkit-transform:rotate(0);transform:rotate(0);}
+            to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+        }
+        
+        .loading{width:300px;height:300px;margin:0 auto;border:1px solid pink;text-align: center;vertical-align: middle;display: table-cell;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box">
+            <span id="wait">3</span>
+        </div>
+        
+        <div class="loading"><img src="../img1.gif" alt=""></div>
+    </div>
+    <div id="loading">
+        <div class="loading-con">
+            <div class="loading-circle"></div>
+            <img src="http://jquery.cuishifeng.cn/images/head_4fa80ea.jpg" alt="">
+        </div>
+    </div>
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            // alert(1)
+            (function(){
+                var wait = document.getElementById('wait'),box = document.querySelector('#box');
+                var interval = setInterval(function(){
+                    var time = --wait.innerHTML;
+                    if(time <= 0) {
+                        // location.href = href;
+                        clearInterval(interval);
+                    };
+                }, 1000);
+            })();
+        });
+        window.onload = function(){
+            var loadBox = document.querySelector('#loading');
+            loadBox.style.display = 'block';
+            setTimeout(function(){
+                loadBox.style.display = 'none';
+            },5000);
+        }
+    </script>
+</body>
+</html>
