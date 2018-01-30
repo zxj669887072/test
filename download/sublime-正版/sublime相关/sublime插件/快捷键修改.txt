@@ -1,0 +1,6 @@
+Preferences---> key bindings
+[
+	
+    { "keys": ["ctrl+alt+shift+p"], "command": "autoprefixer" }
+
+]

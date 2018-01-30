@@ -1,0 +1,447 @@
+Starting the Apache2a service
+The Apache2a service is running.
+ [mpm_winnt:notice] [pid 4156:tid 496] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue Apr 19 16:01:46.225280 2016] [mpm_winnt:notice] [pid 4156:tid 496] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue Apr 19 16:01:46.225280 2016] [core:notice] [pid 4156:tid 496] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue Apr 19 16:01:46.236280 2016] [mpm_winnt:notice] [pid 4156:tid 496] AH00418: Parent: Created child process 3680
+[Tue Apr 19 16:01:49.140446 2016] [mpm_winnt:notice] [pid 3680:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue Apr 19 17:40:20.270127 2016] [mpm_winnt:crit] [pid 3680:tid 392] AH02538: Child: Parent process exited abruptly. Child process is ending
+Starting the Apache2a service
+The Apache2a service is running.
+ [core:warn] [pid 3036:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 19 17:40:26.447738 2016] [mpm_winnt:notice] [pid 3036:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue Apr 19 17:40:26.447738 2016] [mpm_winnt:notice] [pid 3036:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue Apr 19 17:40:26.447738 2016] [core:notice] [pid 3036:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue Apr 19 17:40:26.463338 2016] [mpm_winnt:notice] [pid 3036:tid 488] AH00418: Parent: Created child process 2316
+[Tue Apr 19 17:40:28.257341 2016] [mpm_winnt:notice] [pid 2316:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue Apr 19 17:40:54.059786 2016] [mpm_winnt:crit] [pid 2316:tid 392] AH02538: Child: Parent process exited abruptly. Child process is ending
+Starting the Apache2a service
+The Apache2a service is running.
+ [core:warn] [pid 3100:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 19 17:41:10.892215 2016] [mpm_winnt:notice] [pid 3100:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue Apr 19 17:41:10.892215 2016] [mpm_winnt:notice] [pid 3100:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue Apr 19 17:41:10.892215 2016] [core:notice] [pid 3100:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue Apr 19 17:41:10.907815 2016] [mpm_winnt:notice] [pid 3100:tid 488] AH00418: Parent: Created child process 2792
+[Tue Apr 19 17:41:12.530218 2016] [mpm_winnt:notice] [pid 2792:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue Apr 19 18:14:03.124261 2016] [mpm_winnt:notice] [pid 3100:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Apr 19 18:14:05.152265 2016] [mpm_winnt:notice] [pid 2792:tid 392] AH00364: Child: All worker threads have exited.
+[Tue Apr 19 18:14:07.773070 2016] [mpm_winnt:notice] [pid 3100:tid 488] AH00430: Parent: Child process 2792 exited successfully.
+[Tue Apr 19 18:14:50.808265 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue Apr 19 18:14:50.823865 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue Apr 19 18:14:50.823865 2016] [core:notice] [pid 1500:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue Apr 19 18:14:50.823865 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00418: Parent: Created child process 2080
+[Tue Apr 19 18:14:52.633468 2016] [mpm_winnt:notice] [pid 2080:tid 392] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 20 22:05:25.173287 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 20 22:05:28.277692 2016] [mpm_winnt:notice] [pid 2080:tid 392] AH00364: Child: All worker threads have exited.
+[Wed Apr 20 22:05:43.347318 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00430: Parent: Child process 2080 exited successfully.
+[Thu Apr 21 08:10:53.609069 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Apr 21 08:10:53.624669 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Apr 21 08:10:53.624669 2016] [core:notice] [pid 1480:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu Apr 21 08:10:53.624669 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00418: Parent: Created child process 1988
+[Thu Apr 21 08:10:56.089473 2016] [mpm_winnt:notice] [pid 1988:tid 392] AH00354: Child: Starting 150 worker threads.
+[Thu Apr 21 21:51:35.688864 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Apr 21 21:51:38.684069 2016] [mpm_winnt:notice] [pid 1988:tid 392] AH00364: Child: All worker threads have exited.
+[Thu Apr 21 21:51:53.457295 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00430: Parent: Child process 1988 exited successfully.
+[Fri Apr 22 08:10:30.335455 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Fri Apr 22 08:10:30.429055 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Fri Apr 22 08:10:30.429055 2016] [core:notice] [pid 1484:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Fri Apr 22 08:10:30.429055 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00418: Parent: Created child process 1168
+[Fri Apr 22 08:10:33.205860 2016] [mpm_winnt:notice] [pid 1168:tid 392] AH00354: Child: Starting 150 worker threads.
+[Fri Apr 22 22:01:28.984286 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Apr 22 22:01:31.012289 2016] [mpm_winnt:notice] [pid 1168:tid 392] AH00364: Child: All worker threads have exited.
+[Fri Apr 22 22:01:32.213491 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00430: Parent: Child process 1168 exited successfully.
+[Sat Apr 23 09:09:58.715455 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sat Apr 23 09:09:58.731055 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sat Apr 23 09:09:58.731055 2016] [core:notice] [pid 1480:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sat Apr 23 09:09:58.731055 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00418: Parent: Created child process 1964
+[Sat Apr 23 09:10:02.085061 2016] [mpm_winnt:notice] [pid 1964:tid 392] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 27 14:23:28.516061 2016] [core:warn] [pid 1468:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 27 14:23:29.171262 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Wed Apr 27 14:23:29.186862 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Wed Apr 27 14:23:29.186862 2016] [core:notice] [pid 1468:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Wed Apr 27 14:23:29.186862 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00418: Parent: Created child process 1108
+[Wed Apr 27 14:23:32.088467 2016] [mpm_winnt:notice] [pid 1108:tid 392] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 27 15:19:48.157649 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 27 15:19:50.185653 2016] [mpm_winnt:notice] [pid 1108:tid 392] AH00364: Child: All worker threads have exited.
+[Wed Apr 27 15:19:50.450853 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00430: Parent: Child process 1108 exited successfully.
+[Wed Apr 27 15:55:33.228264 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Wed Apr 27 15:55:33.321864 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Wed Apr 27 15:55:33.321864 2016] [core:notice] [pid 1484:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Wed Apr 27 15:55:33.321864 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00418: Parent: Created child process 1016
+[Wed Apr 27 15:55:36.051869 2016] [mpm_winnt:notice] [pid 1016:tid 392] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 27 17:02:33.601315 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 27 17:02:35.629318 2016] [mpm_winnt:notice] [pid 1016:tid 392] AH00364: Child: All worker threads have exited.
+[Wed Apr 27 17:02:35.816519 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00430: Parent: Child process 1016 exited successfully.
+[Thu Apr 28 08:42:48.492059 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Apr 28 08:42:48.507659 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Apr 28 08:42:48.507659 2016] [core:notice] [pid 1488:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu Apr 28 08:42:48.507659 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00418: Parent: Created child process 1856
+[Thu Apr 28 08:42:51.081663 2016] [mpm_winnt:notice] [pid 1856:tid 392] AH00354: Child: Starting 150 worker threads.
+[Thu Apr 28 09:24:03.254512 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Apr 28 09:24:05.282516 2016] [mpm_winnt:notice] [pid 1856:tid 392] AH00364: Child: All worker threads have exited.
+[Thu Apr 28 09:24:05.547716 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00430: Parent: Child process 1856 exited successfully.
+[Thu Apr 28 09:24:48.226841 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Apr 28 09:24:48.242441 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Apr 28 09:24:48.242441 2016] [core:notice] [pid 1500:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu Apr 28 09:24:48.242441 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00418: Parent: Created child process 1908
+[Thu Apr 28 09:24:50.348444 2016] [mpm_winnt:notice] [pid 1908:tid 392] AH00354: Child: Starting 150 worker threads.
+[Fri Apr 29 16:37:26.974333 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Apr 29 16:37:31.888342 2016] [mpm_winnt:notice] [pid 1908:tid 392] AH00364: Child: All worker threads have exited.
+[Fri Apr 29 16:37:46.895568 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00430: Parent: Child process 1908 exited successfully.
+[Fri Apr 29 16:38:26.102245 2016] [mpm_winnt:notice] [pid 1476:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Fri Apr 29 16:38:26.133445 2016] [mpm_winnt:notice] [pid 1476:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Fri Apr 29 16:38:26.133445 2016] [core:notice] [pid 1476:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Fri Apr 29 16:38:26.133445 2016] [mpm_winnt:notice] [pid 1476:tid 488] AH00418: Parent: Created child process 1184
+[Fri Apr 29 16:38:28.270649 2016] [mpm_winnt:notice] [pid 1184:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue May 03 08:59:26.639688 2016] [mpm_winnt:notice] [pid 1476:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue May 03 08:59:28.667692 2016] [mpm_winnt:notice] [pid 1184:tid 392] AH00364: Child: All worker threads have exited.
+[Tue May 03 08:59:29.120093 2016] [mpm_winnt:notice] [pid 1476:tid 488] AH00430: Parent: Child process 1184 exited successfully.
+[Tue May 03 09:00:23.642651 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue May 03 09:00:23.673851 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue May 03 09:00:23.673851 2016] [core:notice] [pid 1468:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue May 03 09:00:23.673851 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00418: Parent: Created child process 2136
+[Tue May 03 09:00:25.935855 2016] [mpm_winnt:notice] [pid 2136:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue May 03 09:02:36.898687 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue May 03 09:02:38.926690 2016] [mpm_winnt:notice] [pid 2136:tid 392] AH00364: Child: All worker threads have exited.
+[Tue May 03 09:02:39.160691 2016] [mpm_winnt:notice] [pid 1468:tid 488] AH00430: Parent: Child process 2136 exited successfully.
+[Tue May 03 09:03:31.322654 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue May 03 09:03:31.338254 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue May 03 09:03:31.338254 2016] [core:notice] [pid 1484:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue May 03 09:03:31.338254 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00418: Parent: Created child process 1952
+[Tue May 03 09:03:33.959058 2016] [mpm_winnt:notice] [pid 1952:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue May 03 17:59:24.507407 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue May 03 17:59:27.689813 2016] [mpm_winnt:notice] [pid 1952:tid 392] AH00364: Child: All worker threads have exited.
+[Tue May 03 17:59:43.305440 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00430: Parent: Child process 1952 exited successfully.
+[Tue May 03 18:39:41.433044 2016] [mpm_winnt:notice] [pid 1528:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue May 03 18:39:41.448644 2016] [mpm_winnt:notice] [pid 1528:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue May 03 18:39:41.448644 2016] [core:notice] [pid 1528:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue May 03 18:39:41.448644 2016] [mpm_winnt:notice] [pid 1528:tid 488] AH00418: Parent: Created child process 1096
+[Tue May 03 18:39:43.679448 2016] [mpm_winnt:notice] [pid 1096:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue May 03 18:42:30.471752 2016] [mpm_winnt:notice] [pid 1528:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue May 03 18:42:32.499755 2016] [mpm_winnt:notice] [pid 1096:tid 392] AH00364: Child: All worker threads have exited.
+[Tue May 03 18:42:32.733756 2016] [mpm_winnt:notice] [pid 1528:tid 488] AH00430: Parent: Child process 1096 exited successfully.
+[Wed May 04 08:52:42.316853 2016] [mpm_winnt:notice] [pid 1524:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Wed May 04 08:52:42.332453 2016] [mpm_winnt:notice] [pid 1524:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Wed May 04 08:52:42.332453 2016] [core:notice] [pid 1524:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Wed May 04 08:52:42.332453 2016] [mpm_winnt:notice] [pid 1524:tid 488] AH00418: Parent: Created child process 2036
+[Wed May 04 08:52:46.232460 2016] [mpm_winnt:notice] [pid 2036:tid 392] AH00354: Child: Starting 150 worker threads.
+[Wed May 04 18:02:07.693753 2016] [mpm_winnt:notice] [pid 1524:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed May 04 18:02:11.640560 2016] [mpm_winnt:notice] [pid 2036:tid 392] AH00364: Child: All worker threads have exited.
+[Wed May 04 18:02:29.346591 2016] [mpm_winnt:notice] [pid 1524:tid 488] AH00430: Parent: Child process 2036 exited successfully.
+[Thu May 05 08:51:53.110245 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu May 05 08:51:53.219445 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu May 05 08:51:53.219445 2016] [core:notice] [pid 1492:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu May 05 08:51:53.219445 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00418: Parent: Created child process 2012
+[Thu May 05 08:51:56.355050 2016] [mpm_winnt:notice] [pid 2012:tid 392] AH00354: Child: Starting 150 worker threads.
+[Thu May 05 17:54:53.613729 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu May 05 17:54:56.780535 2016] [mpm_winnt:notice] [pid 2012:tid 392] AH00364: Child: All worker threads have exited.
+[Thu May 05 17:55:16.124569 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00430: Parent: Child process 2012 exited successfully.
+[Fri May 06 08:41:51.656646 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Fri May 06 08:41:51.672246 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Fri May 06 08:41:51.672246 2016] [core:notice] [pid 1484:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Fri May 06 08:41:51.672246 2016] [mpm_winnt:notice] [pid 1484:tid 488] AH00418: Parent: Created child process 1200
+[Fri May 06 08:41:54.995052 2016] [mpm_winnt:notice] [pid 1200:tid 392] AH00354: Child: Starting 150 worker threads.
+[Sun May 22 12:22:20.821835 2016] [core:warn] [pid 1504:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun May 22 12:22:23.380240 2016] [mpm_winnt:notice] [pid 1504:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sun May 22 12:22:23.380240 2016] [mpm_winnt:notice] [pid 1504:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sun May 22 12:22:23.380240 2016] [core:notice] [pid 1504:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sun May 22 12:22:23.380240 2016] [mpm_winnt:notice] [pid 1504:tid 488] AH00418: Parent: Created child process 1340
+[Sun May 22 12:22:25.907444 2016] [mpm_winnt:notice] [pid 1340:tid 392] AH00354: Child: Starting 150 worker threads.
+[Sun May 22 12:22:39.432668 2016] [mpm_winnt:notice] [pid 1504:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 22 12:22:41.460671 2016] [mpm_winnt:notice] [pid 1340:tid 392] AH00364: Child: All worker threads have exited.
+[Sun May 22 12:22:42.178273 2016] [mpm_winnt:notice] [pid 1504:tid 488] AH00430: Parent: Child process 1340 exited successfully.
+[Mon May 23 09:01:22.829840 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon May 23 09:01:22.876640 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon May 23 09:01:22.876640 2016] [core:notice] [pid 1492:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Mon May 23 09:01:22.876640 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00418: Parent: Created child process 272
+[Mon May 23 09:01:25.559845 2016] [mpm_winnt:notice] [pid 272:tid 392] AH00354: Child: Starting 150 worker threads.
+[Fri May 27 18:05:29.555413 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri May 27 18:05:32.784619 2016] [mpm_winnt:notice] [pid 272:tid 392] AH00364: Child: All worker threads have exited.
+[Fri May 27 18:05:54.109856 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00430: Parent: Child process 272 exited successfully.
+[Sun Jun 12 08:58:57.644057 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sun Jun 12 08:58:57.737657 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sun Jun 12 08:58:57.737657 2016] [core:notice] [pid 1492:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sun Jun 12 08:58:57.753257 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00418: Parent: Created child process 1156
+[Sun Jun 12 08:59:00.779662 2016] [mpm_winnt:notice] [pid 1156:tid 392] AH00354: Child: Starting 150 worker threads.
+[Sun Jun 19 14:47:53.009245 2016] [core:warn] [pid 1488:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Jun 19 14:47:56.129250 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sun Jun 19 14:47:56.144850 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sun Jun 19 14:47:56.144850 2016] [core:notice] [pid 1488:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sun Jun 19 14:47:56.144850 2016] [mpm_winnt:notice] [pid 1488:tid 488] AH00418: Parent: Created child process 2184
+[Sun Jun 19 14:47:58.812455 2016] [mpm_winnt:notice] [pid 2184:tid 392] AH00354: Child: Starting 150 worker threads.
+[Mon Jun 27 09:06:58.462456 2016] [core:warn] [pid 1500:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 27 09:06:59.242457 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Jun 27 09:06:59.258057 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Jun 27 09:06:59.258057 2016] [core:notice] [pid 1500:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Mon Jun 27 09:06:59.258057 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00418: Parent: Created child process 2240
+[Mon Jun 27 09:07:01.832062 2016] [mpm_winnt:notice] [pid 2240:tid 392] AH00354: Child: Starting 150 worker threads.
+[Thu Jun 30 08:50:42.962255 2016] [core:warn] [pid 1512:tid 492] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 30 08:50:43.664256 2016] [mpm_winnt:notice] [pid 1512:tid 492] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Jun 30 08:50:43.679856 2016] [mpm_winnt:notice] [pid 1512:tid 492] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Jun 30 08:50:43.679856 2016] [core:notice] [pid 1512:tid 492] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu Jun 30 08:50:43.679856 2016] [mpm_winnt:notice] [pid 1512:tid 492] AH00418: Parent: Created child process 1760
+[Thu Jun 30 08:50:46.129060 2016] [mpm_winnt:notice] [pid 1760:tid 392] AH00354: Child: Starting 150 worker threads.
+[Fri Jul 01 10:06:34.360996 2016] [:error] [pid 1760:tid 1780] [client 127.0.0.1:56905] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.364996 2016] [:error] [pid 1760:tid 1776] [client 127.0.0.1:56904] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.378997 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56903] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.385997 2016] [:error] [pid 1760:tid 1776] [client 127.0.0.1:56907] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.386997 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56906] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.402998 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56908] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.767019 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56909] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.784020 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56910] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.834023 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56911] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.851024 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56912] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.946029 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56913] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:34.968030 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56914] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:35.299049 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56915] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:35.310050 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56916] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:35.312050 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56917] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:35.647069 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56918] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:35.685071 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56919] script 'D:/WWW/getconf.php' not found or unable to stat
+[Fri Jul 01 10:06:35.730074 2016] [:error] [pid 1760:tid 1840] [client 127.0.0.1:56920] script 'D:/WWW/getconf.php' not found or unable to stat
+[Mon Jul 11 09:05:55.467463 2016] [core:warn] [pid 1500:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 11 09:05:58.665469 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Jul 11 09:05:58.681069 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Jul 11 09:05:58.681069 2016] [core:notice] [pid 1500:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Mon Jul 11 09:05:58.681069 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00418: Parent: Created child process 1220
+[Mon Jul 11 09:06:01.879074 2016] [mpm_winnt:notice] [pid 1220:tid 392] AH00354: Child: Starting 150 worker threads.
+[Sat Jul 16 17:04:13.015055 2016] [core:warn] [pid 1480:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Jul 16 17:04:13.951056 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sat Jul 16 17:04:13.966656 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sat Jul 16 17:04:13.966656 2016] [core:notice] [pid 1480:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sat Jul 16 17:04:13.966656 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00418: Parent: Created child process 2236
+[Sat Jul 16 17:04:17.414262 2016] [mpm_winnt:notice] [pid 2236:tid 392] AH00354: Child: Starting 150 worker threads.
+[Sat Jul 16 17:12:23.588941 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jul 16 17:12:25.616944 2016] [mpm_winnt:notice] [pid 2236:tid 392] AH00364: Child: All worker threads have exited.
+[Sat Jul 16 17:12:25.835345 2016] [mpm_winnt:notice] [pid 1480:tid 488] AH00430: Parent: Child process 2236 exited successfully.
+[Mon Jul 18 09:03:29.586285 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Jul 18 09:03:29.648686 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Jul 18 09:03:29.648686 2016] [core:notice] [pid 1500:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Mon Jul 18 09:03:29.648686 2016] [mpm_winnt:notice] [pid 1500:tid 488] AH00418: Parent: Created child process 2640
+[Mon Jul 18 09:03:33.002691 2016] [mpm_winnt:notice] [pid 2640:tid 392] AH00354: Child: Starting 150 worker threads.
+[Fri Jul 22 09:17:24.031652 2016] [core:warn] [pid 1516:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jul 22 09:17:25.212856 2016] [mpm_winnt:notice] [pid 1516:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Fri Jul 22 09:17:25.212856 2016] [mpm_winnt:notice] [pid 1516:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Fri Jul 22 09:17:25.212856 2016] [core:notice] [pid 1516:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Fri Jul 22 09:17:25.212856 2016] [mpm_winnt:notice] [pid 1516:tid 488] AH00418: Parent: Created child process 1956
+[Fri Jul 22 09:17:27.958461 2016] [mpm_winnt:notice] [pid 1956:tid 392] AH00354: Child: Starting 150 worker threads.
+[Tue Jul 26 15:21:35.111645 2016] [core:warn] [pid 1496:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 26 15:21:35.911046 2016] [mpm_winnt:notice] [pid 1496:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue Jul 26 15:21:35.926646 2016] [mpm_winnt:notice] [pid 1496:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue Jul 26 15:21:35.926646 2016] [core:notice] [pid 1496:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue Jul 26 15:21:35.926646 2016] [mpm_winnt:notice] [pid 1496:tid 488] AH00418: Parent: Created child process 1712
+[Tue Jul 26 15:21:38.313450 2016] [mpm_winnt:notice] [pid 1712:tid 392] AH00354: Child: Starting 150 worker threads.
+[Wed Jul 27 09:09:27.934846 2016] [core:warn] [pid 1492:tid 488] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jul 27 09:09:32.037653 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Wed Jul 27 09:09:32.053253 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Wed Jul 27 09:09:32.053253 2016] [core:notice] [pid 1492:tid 488] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Wed Jul 27 09:09:32.053253 2016] [mpm_winnt:notice] [pid 1492:tid 488] AH00418: Parent: Created child process 1280
+[Wed Jul 27 09:09:35.251258 2016] [mpm_winnt:notice] [pid 1280:tid 392] AH00354: Child: Starting 150 worker threads.
+[Fri Jul 29 14:02:54.557668 2016] [core:warn] [pid 1496:tid 624] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jul 29 14:02:55.665270 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Fri Jul 29 14:02:55.680870 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Fri Jul 29 14:02:55.680870 2016] [core:notice] [pid 1496:tid 624] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Fri Jul 29 14:02:55.680870 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00418: Parent: Created child process 2256
+[Fri Jul 29 14:02:59.144076 2016] [mpm_winnt:notice] [pid 2256:tid 568] AH00354: Child: Starting 150 worker threads.
+[Sat Jul 30 17:48:23.142620 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jul 30 17:48:35.061040 2016] [mpm_winnt:notice] [pid 2256:tid 568] AH00364: Child: All worker threads have exited.
+[Sat Jul 30 18:17:13.409657 2016] [core:warn] [pid 1500:tid 624] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Jul 30 18:17:14.548459 2016] [mpm_winnt:notice] [pid 1500:tid 624] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sat Jul 30 18:17:14.564059 2016] [mpm_winnt:notice] [pid 1500:tid 624] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sat Jul 30 18:17:14.564059 2016] [core:notice] [pid 1500:tid 624] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sat Jul 30 18:17:14.564059 2016] [mpm_winnt:notice] [pid 1500:tid 624] AH00418: Parent: Created child process 2216
+[Sat Jul 30 18:17:18.526466 2016] [mpm_winnt:notice] [pid 2216:tid 568] AH00354: Child: Starting 150 worker threads.
+[Sat Jul 30 18:19:35.152361 2016] [mpm_winnt:notice] [pid 1500:tid 624] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jul 30 18:19:37.180365 2016] [mpm_winnt:notice] [pid 2216:tid 568] AH00364: Child: All worker threads have exited.
+[Sat Jul 30 18:19:37.601565 2016] [mpm_winnt:notice] [pid 1500:tid 624] AH00430: Parent: Child process 2216 exited successfully.
+[Mon Aug 01 09:02:26.289650 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Aug 01 09:02:26.320850 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Aug 01 09:02:26.320850 2016] [core:notice] [pid 1544:tid 624] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Mon Aug 01 09:02:26.320850 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00418: Parent: Created child process 2064
+[Mon Aug 01 09:02:29.986857 2016] [mpm_winnt:notice] [pid 2064:tid 568] AH00354: Child: Starting 150 worker threads.
+[Mon Aug 01 11:03:09.776851 2016] [mpm_winnt:notice] [pid 2064:tid 568] AH00364: Child: All worker threads have exited.
+[Mon Aug 01 11:03:10.067867 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00428: Parent: child process 2064 exited with status 0 -- Restarting.
+[Mon Aug 01 11:03:11.423945 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Aug 01 11:03:11.423945 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Aug 01 11:03:11.423945 2016] [core:notice] [pid 1544:tid 624] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Mon Aug 01 11:03:11.480948 2016] [mpm_winnt:notice] [pid 1544:tid 624] AH00418: Parent: Created child process 3828
+[Mon Aug 01 11:03:15.832563 2016] [mpm_winnt:crit] [pid 3828:tid 568] (OS 10022)提供了一个无效的参数。  : AH00405: Child: WSASocket failed to open the inherited socket
+[Mon Aug 01 11:03:16.067965 2016] [mpm_winnt:crit] [pid 1544:tid 624] AH00427: Parent: child process 3828 exited with status 3 -- Aborting.
+[Mon Aug 01 11:03:16.067965 2016] [core:error] [pid 1544:tid 624] AH00546: no record of generation 0 of exiting child 3828
+[Tue Aug 02 09:00:03.863699 2016] [mpm_winnt:notice] [pid 1536:tid 620] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Tue Aug 02 09:00:03.879299 2016] [mpm_winnt:notice] [pid 1536:tid 620] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Tue Aug 02 09:00:03.879299 2016] [core:notice] [pid 1536:tid 620] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Tue Aug 02 09:00:03.879299 2016] [mpm_winnt:notice] [pid 1536:tid 620] AH00418: Parent: Created child process 2604
+[Tue Aug 02 09:00:08.933708 2016] [mpm_winnt:notice] [pid 2604:tid 568] AH00354: Child: Starting 150 worker threads.
+[Wed Aug 03 08:37:36.925050 2016] [core:warn] [pid 1496:tid 624] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Aug 03 08:37:37.923452 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Wed Aug 03 08:37:37.923452 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Wed Aug 03 08:37:37.923452 2016] [core:notice] [pid 1496:tid 624] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Wed Aug 03 08:37:37.923452 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00418: Parent: Created child process 1944
+[Wed Aug 03 08:37:41.527058 2016] [mpm_winnt:notice] [pid 1944:tid 568] AH00354: Child: Starting 150 worker threads.
+[Wed Aug 03 22:03:16.989610 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Aug 03 22:03:20.374816 2016] [mpm_winnt:notice] [pid 1944:tid 568] AH00364: Child: All worker threads have exited.
+[Wed Aug 03 22:03:34.180840 2016] [mpm_winnt:notice] [pid 1496:tid 624] AH00430: Parent: Child process 1944 exited successfully.
+[Thu Aug 04 08:59:39.688271 2016] [mpm_winnt:notice] [pid 1476:tid 624] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Aug 04 08:59:39.703871 2016] [mpm_winnt:notice] [pid 1476:tid 624] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Aug 04 08:59:39.703871 2016] [core:notice] [pid 1476:tid 624] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu Aug 04 08:59:39.703871 2016] [mpm_winnt:notice] [pid 1476:tid 624] AH00418: Parent: Created child process 2004
+[Thu Aug 04 08:59:43.432277 2016] [mpm_winnt:notice] [pid 2004:tid 568] AH00354: Child: Starting 150 worker threads.
+[Thu Aug 04 11:32:09.748459 2016] [core:warn] [pid 1504:tid 632] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Aug 04 11:32:15.146069 2016] [mpm_winnt:notice] [pid 1504:tid 632] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Aug 04 11:32:15.161669 2016] [mpm_winnt:notice] [pid 1504:tid 632] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Aug 04 11:32:15.161669 2016] [core:notice] [pid 1504:tid 632] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Thu Aug 04 11:32:15.161669 2016] [mpm_winnt:notice] [pid 1504:tid 632] AH00418: Parent: Created child process 2460
+[Thu Aug 04 11:32:18.656075 2016] [mpm_winnt:notice] [pid 2460:tid 568] AH00354: Child: Starting 150 worker threads.
+[Sat Aug 06 10:20:39.514679 2016] [core:warn] [pid 1492:tid 620] AH00098: pid file D:/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Aug 06 10:20:41.802090 2016] [mpm_winnt:notice] [pid 1492:tid 620] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Sat Aug 06 10:20:41.802090 2016] [mpm_winnt:notice] [pid 1492:tid 620] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Sat Aug 06 10:20:41.802090 2016] [core:notice] [pid 1492:tid 620] AH00094: Command line: 'D:\\phpStudy\\Apache\\bin\\httpd.exe -d D:/phpStudy/Apache'
+[Sat Aug 06 10:20:41.802090 2016] [mpm_winnt:notice] [pid 1492:tid 620] AH00418: Parent: Created child process 2636
+[Sat Aug 06 10:20:45.202896 2016] [mpm_winnt:notice] [pid 2636:tid 568] AH00354: Child: Starting 150 worker threads.
+[Thu Aug 11 17:05:09.932228 2016] [core:warn] [pid 5248:tid 436] AH00098: pid file D:/share/soft/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Aug 11 17:05:10.663270 2016] [mpm_winnt:notice] [pid 5248:tid 436] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Thu Aug 11 17:05:10.682271 2016] [mpm_winnt:notice] [pid 5248:tid 436] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Thu Aug 11 17:05:10.683271 2016] [core:notice] [pid 5248:tid 436] AH00094: Command line: 'D:\\share\\soft\\phpStudy\\Apache\\bin\\httpd.exe -d D:/share/soft/phpStudy/Apache'
+[Thu Aug 11 17:05:10.701272 2016] [mpm_winnt:notice] [pid 5248:tid 436] AH00418: Parent: Created child process 11940
+[Thu Aug 11 17:05:13.915456 2016] [mpm_winnt:notice] [pid 11940:tid 456] AH00354: Child: Starting 150 worker threads.
+[Sat Aug 13 14:34:55.906606 2016] [:error] [pid 11940:tid 1664] [client ::1:64580] PHP Parse error:  syntax error, unexpected '<' in D:\\WWW\\link-mysql.php on line 24
+[Sat Aug 13 14:34:56.684021 2016] [:error] [pid 11940:tid 1664] [client ::1:64580] PHP Parse error:  syntax error, unexpected '<' in D:\\WWW\\link-mysql.php on line 24
+[Sat Aug 13 14:37:21.797302 2016] [:error] [pid 11940:tid 1664] [client ::1:64593] PHP Notice:  Trying to get property of non-object in D:\\WWW\\link-mysql.php on line 35
+[Sat Aug 13 14:37:22.747313 2016] [:error] [pid 11940:tid 1664] [client ::1:64593] PHP Notice:  Trying to get property of non-object in D:\\WWW\\link-mysql.php on line 35
+[Sat Aug 13 14:37:26.205726 2016] [:error] [pid 11940:tid 1664] [client ::1:64593] PHP Notice:  Trying to get property of non-object in D:\\WWW\\link-mysql.php on line 35
+[Sat Aug 13 14:38:29.432836 2016] [:error] [pid 11940:tid 1664] [client ::1:64605] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (42000/1044): Access denied for user 'test'@'127.0.0.1' to database 'mydb' in D:\\WWW\\link-mysql.php on line 10
+[Sat Aug 13 14:38:32.231249 2016] [:error] [pid 11940:tid 1664] [client ::1:64605] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (42000/1044): Access denied for user 'test'@'127.0.0.1' to database 'mydb' in D:\\WWW\\link-mysql.php on line 10
+[Sat Aug 13 14:38:32.458056 2016] [:error] [pid 11940:tid 1664] [client ::1:64605] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (42000/1044): Access denied for user 'test'@'127.0.0.1' to database 'mydb' in D:\\WWW\\link-mysql.php on line 10
+[Sat Aug 13 14:38:43.475692 2016] [:error] [pid 11940:tid 1664] [client ::1:64609] PHP Notice:  Trying to get property of non-object in D:\\WWW\\link-mysql.php on line 36
+[Sat Aug 13 14:38:44.482901 2016] [:error] [pid 11940:tid 1664] [client ::1:64609] PHP Notice:  Trying to get property of non-object in D:\\WWW\\link-mysql.php on line 36
+[Sat Aug 13 14:38:44.745907 2016] [:error] [pid 11940:tid 1664] [client ::1:64609] PHP Notice:  Trying to get property of non-object in D:\\WWW\\link-mysql.php on line 36
+[Sat Aug 13 15:26:20.118563 2016] [mpm_winnt:crit] [pid 11940:tid 456] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Mon Aug 15 10:07:33.889101 2016] [core:warn] [pid 5096:tid 436] AH00098: pid file //172.16.7.100/share/soft/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_bz2.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_bz2.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_curl.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_curl.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_gd2.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_gd2.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_mbstring.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_mbstring.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_mysql.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_mysql.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_mysqli.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_mysqli.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_pdo_mysql.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_pdo_mysql.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_pdo_odbc.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_pdo_odbc.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_pdo_sqlite.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_pdo_sqlite.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_sockets.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_sockets.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_sqlite.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_sqlite.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_sqlite3.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_sqlite3.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_xmlrpc.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_xmlrpc.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_xsl.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_xsl.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+[Mon Aug 15 10:07:40.743493 2016] [mpm_winnt:notice] [pid 5096:tid 436] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Aug 15 10:07:40.748493 2016] [mpm_winnt:notice] [pid 5096:tid 436] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Aug 15 10:07:40.749493 2016] [core:notice] [pid 5096:tid 436] AH00094: Command line: '\\\\172.16.7.100\\share\\soft\\phpStudy\\Apache\\bin\\httpd.exe -d //172.16.7.100/share/soft/phpStudy/Apache'
+[Mon Aug 15 10:07:40.869500 2016] [mpm_winnt:notice] [pid 5096:tid 436] AH00418: Parent: Created child process 5928
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_bz2.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_bz2.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_curl.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_curl.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_gd2.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_gd2.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_mbstring.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_mbstring.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_mysql.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_mysql.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_mysqli.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_mysqli.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_pdo_mysql.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_pdo_mysql.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_pdo_odbc.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_pdo_odbc.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_pdo_sqlite.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_pdo_sqlite.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_sockets.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_sockets.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_sqlite.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_sqlite.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_sqlite3.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_sqlite3.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_xmlrpc.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_xmlrpc.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+PHP Warning:  PHP Startup: Unable to load dynamic library '\\172.16.7.100\\share\\soft\\phpStudy\\php53\\ext\\php_xsl.dll' - \xd5\xd2\xb2\xbb\xb5\xbd\xd6\xb8\xb6\xa8\xb5\xc4\xc4\xa3\xbf\xe9\xa1\xa3\r\n in Unknown on line 0
+<br />
+<b>Warning</b>:  PHP Startup: Unable to load dynamic library '\172.16.7.100\share\soft\phpStudy\php53\ext\php_xsl.dll' - 找不到指定的模块。
+ in <b>Unknown</b> on line <b>0</b><br />
+[Mon Aug 15 10:07:49.595999 2016] [mpm_winnt:notice] [pid 5928:tid 456] AH00354: Child: Starting 150 worker threads.
+[Mon Aug 15 10:07:49.659003 2016] [:error] [pid 5928:tid 1852] [client 127.0.0.1:51392] PHP Fatal error:  Class 'mysqli' not found in D:\\WWW\\link-mysql.php on line 9
+[Mon Aug 15 10:07:52.042643 2016] [:error] [pid 5928:tid 1852] [client 127.0.0.1:51392] PHP Fatal error:  Class 'mysqli' not found in D:\\WWW\\link-mysql.php on line 9
+[Mon Aug 15 10:08:11.281305 2016] [mpm_winnt:crit] [pid 5928:tid 456] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Mon Aug 15 10:08:22.747834 2016] [core:warn] [pid 4144:tid 436] AH00098: pid file D:/share/soft/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Aug 15 10:08:23.720889 2016] [mpm_winnt:notice] [pid 4144:tid 436] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Mon Aug 15 10:08:23.729890 2016] [mpm_winnt:notice] [pid 4144:tid 436] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Mon Aug 15 10:08:23.729890 2016] [core:notice] [pid 4144:tid 436] AH00094: Command line: 'D:\\share\\soft\\phpStudy\\Apache\\bin\\httpd.exe -d D:/share/soft/phpStudy/Apache'
+[Mon Aug 15 10:08:23.750891 2016] [mpm_winnt:notice] [pid 4144:tid 436] AH00418: Parent: Created child process 7052
+[Mon Aug 15 10:08:26.957074 2016] [mpm_winnt:notice] [pid 7052:tid 456] AH00354: Child: Starting 150 worker threads.
+[Mon Aug 15 10:12:38.456826 2016] [mpm_winnt:crit] [pid 7052:tid 456] AH02538: Child: Parent process exited abruptly. Child process is ending

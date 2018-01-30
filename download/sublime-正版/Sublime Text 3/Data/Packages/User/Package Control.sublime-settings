@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"AngularJS",
+		"Autoprefixer",
+		"Babel",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"ChineseLocalizations",
+		"ColorPicker",
+		"ConvertToUTF8",
+		"CSS Format",
+		"CSS3",
+		"CSSFontFamily",
+		"DocBlockr",
+		"Emmet",
+		"GBK Support",
+		"HTML-CSS-JS Prettify",
+		"Insert Nums",
+		"JavaScript Completions",
+		"jQuery",
+		"JsFormat",
+		"LiveStyle",
+		"npm",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeTmpl",
+		"Syntax Highlighting for Sass",
+		"Tab Filter",
+		"Theme - Soda"
+	]
+}

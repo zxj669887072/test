@@ -1,0 +1,11 @@
+www.github.com
+
+git.oschina.net
+
+右键git bash here
+
+输入命令 git config --global user.name "你的名字"
+
+回车确认
+
+输入命令 git config --global user.email "邮箱"

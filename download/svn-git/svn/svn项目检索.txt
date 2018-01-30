@@ -1,0 +1,6 @@
+总项目svg地址：https://jun/svn/tzs/project
+
+	第一组：https://Jun/svn/tzs/project/group1
+	……
+用户名：你名字的全拼，比如：李萍，账号是liping
+密码：和用户名一样

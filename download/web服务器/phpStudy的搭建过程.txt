@@ -1,0 +1,23 @@
+1.安装phpStudy
+2.安装完成后打开
+3.找到安装目录的WWW文件夹
+4.进入该目录
+5.将想要部署的项目，放在www文件夹下
+
+localhost --->  WWW 
+
+例如：
+	项目名为zasc
+	localhost/zasc/index.html
+	建议文件夹名不要为中文
+
+
+修改项目目录
+
+
+phpStudy安装目录下————>Apache文件夹——————>conf文件夹————————>httpd.conf
+打开后搜索 DocumentRoot  将后面的地址改为要设置的地址
+
+
+
+cmd----->ipconfig  查看个人IP地址
