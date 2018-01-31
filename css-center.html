@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css-center</title>
+	<style>
+		.wrapper {
+	  		display: table;
+	  width: 400px;
+	  height: 200px;
+	  background-color: red;
+   		}
+   	.ceil {
+	  display: table-cell;
+	  vertical-align: middle;
+	  background-color: blue;
+	  text-align: center;
+   	}
+   	/* 2 */
+   	.father {
+	    display: table-cell;
+	    width: 200px;
+	    height: 200px;
+	    background: skyblue;
+	    vertical-align: middle;
+	    text-align: center;
+	}
+	.son {
+	    display: inline-block;
+	    width: 100px;
+	    height: 100px;
+	    background: red;
+	}
+	
+	/* 3 */
+	.father {
+        display: grid;
+        align-items:center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background: skyblue;
+
+    }
+    .son {
+        width: 10px;
+        height: 10px;
+        border: 1px solid red
+    }
+
+    .content1 {
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    height: 240px;
+	    width: 70%;
+	    text-align: center;
+	    line-height: 240px;
+	    background:rgba(234,12,88,.6);
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+   		<div class="ceil">
+     		<div class="content">Hello world!</div>
+   		</div>
+ 	</div>
+ 	<hr>
+ 	<!-- 2/table-cell -->
+ 	<div class="father">
+        <div class="son"></div>
+    </div>
+	<br>
+    <!-- 3/grid -->
+ 	<div class="father">
+        <div class="son"></div>
+    </div>
+
+    <div class="content1"> Content here</div>
+
+</body>
+</html>

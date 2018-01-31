@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>h5-dialog</title>
+    <style>
+        html,body,p{margin:0;padding:0;}
+        /*.blank{height:400px;}*/
+        a[href="www.baidu.com"]:after{
+            content:attr(href);
+        }
+
+        dialog {
+            padding: 0;
+            width: 478px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 5px;
+            border: none 0;
+        }
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+            <p>123456789不到一个月前， HTML 5.2 正式成为 W3C 的推荐标准（ REC）,其中，推出了一个新的原生模态对话框元素 \<\dialog\>，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，</p>
+        </div>
+        <div class="blank"></div>
+        <dialog >
+            <!-- Native dialog box! -->
+            <h3 class="modal-header">sweet dialog</h3>
+            <div class="modal-body">
+                <p>This is a sweet dialog, which is much better.</p>
+            </div>
+            <footer class="modal-footer">
+                <button id="get-it" type="button">Get</button>
+                <a href="www.baidu.com"></a>
+            </footer>
+        </dialog>
+    </div>
+    <script>
+        /*
+            *dialog-polyfill 
+            *<script>  npm
+            *IE9+ 主流浏览器
+            *dialogPolyfill.registerDialog(dialog); //初始化
+            *dialog + .backdrop {background-color: rgba(0, 0, 0, 0.4);}    //修改默认样式
+         */
+        var dialog = document.querySelector("dialog");
+        var btn = document.querySelector("#get-it");
+        dialog.showModal();
+        // dialog.close();
+        // dialog.show();
+        
+        dialog.addEventListener('click', (event) => {console.log(event,event.target);
+            if (event.target === dialog) {
+                dialog.close('cancelled');
+                console.log(dialog.returnValue)
+            }
+        });
+        /*dialog.close('cancelled');
+        console.log(dialog.returnValue);*/
+        dialog.onclose = function(){alert("close")};
+        dialog.oncancel = function(){alert("cancel")};      //esc键触发 关闭dialog
+
+        btn.onclick = function(){
+            dialog.close();
+        };
+
+
+    </script>
+</body>
+</html>
