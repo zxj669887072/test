@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fuxi</title>
+	<style>
+		#box1,#box2{border:1px solid #999;margin:10px;padding:10px;width:100px;height:100px;}
+		#box2{box-sizing:border-box;border-radius: 5px;display: flex;}
+		.box1 img{vertical-align: middle;visibility:visible ;}
+		a[attr^="www"]:empty::before{content:attr(href);}
+		/*a[attr^="www"]{display: block;width:20px;height:20px;background: pink;content: " (" attr(href) ")";}*/
+		.box1{visibility: hidden;}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="box1">
+			<p>p标签</p>
+			<span>span文字</span>
+		</div>
+		<div id="box2">
+			<p>p标签</p>
+			<span>span文字</span>
+		</div>
+		<div class="box1">
+			<img src="01.png" alt="">
+			<span>自行车</span>
+		</div>
+		<input type="text" name=""><input type="button" name="" value="button"><input type="reset" name="">
+		<a href="baidu.com" attr="www"></a>
+
+	</div>
+	<script>
+		var box1 = document.querySelector(".box1");console.log(box1.className,box1.classList)
+		/*
+		*简单继承
+		 */
+		function ParentClass(name) {
+			this.name = name;
+		};
+		ParentClass.prototype.sayHello = function () {
+			console.log("I'm parent!" + this.name);
+		};
+		function SubClass(name, age) {console.log(this);
+			//若是要多个参数可以用apply 结合 ...解构
+			ParentClass.call(this, name);
+			this.age = age;
+		};
+		SubClass.prototype = Object.create(ParentClass.prototype);
+		SubClass.prototype.constructor = SubClass;
+		SubClass.prototype.sayChildHello = function (name) {
+			console.log("I'm child " + this.name)
+		};
+
+		let testA = new SubClass('CRPER');
+
+
+
+		
+		if(!("a" in window)){
+			var a = 10;
+		};
+		console.log(a);
+
+		function foo(something){
+			this.a = something;
+		};
+
+		var obj1 = {
+			foo:foo
+		};
+		var obj2 = {};
+		obj1.foo(2);
+		console.log(obj1.a) // 2 ,此时的 this 上下文还在 obj1内,若是 obj1.foo 先保存当做引用再执行传参,则上下文为 window
+
+		obj1.foo.call(obj2,3); // 用 call 强行改变上下文为 obj2内
+		console.log(obj2.a); // 3
+
+		var  bar = new obj1.foo(4); // 这里产生了一个实例
+		console.log(obj1.a); // 2
+		console.log(bar.a); 
+
+
+	</script>
+</body>
+</html>

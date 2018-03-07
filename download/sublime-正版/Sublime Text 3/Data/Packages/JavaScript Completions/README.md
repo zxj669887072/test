@@ -1,4 +1,45 @@
-<h1>JavaScript Completions</h1>
+<h1>🎉🎉 ANNOUNCEMENT - NEW PLUGIN "JavaScript Enhancements" RELEASED 🎉🎉</h1>
+
+<p>
+
+I developed a new plugin with new features thanks to <strong><a href="https://github.com/facebook/flow">Flow</a></strong> (javascript static type checker from Facebook).
+<strong>So, I will NO LONGER SUPPORT "JavaScript Completions" plugin, except in particular cases. I'm going to focus only on this new one!</strong>
+
+You can find it on: 👉👉 <a href="https://github.com/pichillilorenzo/JavaScriptEnhancements">https://github.com/pichillilorenzo/JavaScriptEnhancements</a> 👈👈
+
+This new plugin offers not only a <strong>BETTER AUTOCOMPLETE</strong> but a lot of <strong>features</strong> about creating, 
+developing and managing <a href="https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Creating-a-JavaScript-Project"><strong>JavaScript projects</strong></a>, such as:
+
+- <a href="https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Errors-and-linting">JavaScript real-time errors</a>
+- <a href="https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Code-Refactoring">Code Refactoring</a>
+- <a href="https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Features#bookmarks-project">Local bookmarks project</a>
+- Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)
+- Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)
+- Angular v1 and v2 (it includes also v4 and v5) projects
+- React projects (only about the creation at this moment)
+- React Native projects (only about the creation at this moment. I will add also **NativeScript** support)
+- Express projects (only about the creation at this moment)
+- Yeoman generators
+- etc.
+
+You could use it also in <strong>existing projects</strong>!! (see the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki)
+
+It will turn Sublime Text into a <strong>JavaScript IDE</strong> like!
+
+<h3>OS SUPPORTED NOW by this new plugin</h3>
+
+- Linux (64-bit)
+- Mac OS X 
+- Windows (64-bit): released without the use of [TerminalView](https://github.com/Wramberg/TerminalView) plugin. For each feature (like also creating a project) will be used the `cmd.exe` shell (so during the creation of a project **don't close it** until it finishes!). Unfortunately the TerminalView plugin supports only **Linux-based OS** 😞 . Has someone any advice or idea about that? Is there something similar to the TerminalView plugin for Windows?? Thanks!
+
+Email me for any questions or doubts about this new project on: <a href="mailto:pichillilorenzo@gmail.com">pichillilorenzo@gmail.com</a>
+
+Thanks for your support!!!
+</p>
+
+<hr>
+
+<h2>JavaScript Completions</h2>
 
 [![Sublime Text](https://img.shields.io/badge/Sublime%20Text-2%20%2F%203-brightgreen.svg)](https://www.sublimetext.com/)
 [![Package Control](https://img.shields.io/packagecontrol/dt/JavaScript%20Completions.svg)](https://packagecontrol.io/packages/JavaScript%20Completions) 
@@ -13,9 +54,7 @@ You can enable them on Preferences -> Package Settings -> JavaScript Completions
 
 <strong>Some features could use npm!</strong>
 
-In Windows you must install it! Download it from [https://nodejs.org](https://nodejs.org).
-
-To OSX and Linux, it will be downloaded automatically with nodejs.
+It will be downloaded automatically with nodejs!
 
 Features list:
 - <a href="#find-javascript-description">"Find JavaScript Description" Feature</a>
@@ -120,7 +159,7 @@ You can use this feature in HTML, CSS and JavaScript context!
 
 Just put the cursor on the word you want to check, "right-click" -> <code>"Can I use?"</code> and it will appear an input panel with all items that have a name matching with the word.
 
-You can use key-map: <code>ctrl+alt+w</code>. Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.
+You can use key-map: <code>ctrl+alt+w</code> (<code>super+alt+w</code> on Windows). Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.
 
 After selecting an item from the list, it will appear a popup with all information from the [http://caniuse.com](http://caniuse.com) support tables.
 

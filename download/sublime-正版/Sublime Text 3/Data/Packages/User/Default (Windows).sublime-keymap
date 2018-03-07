@@ -1,5 +1,5 @@
 [
 	
-    { "keys": ["ctrl+alt+shift+p"], "command": "autoprefixer" }
+    { "keys": ["ctrl+alt+shift+a"], "command": "autoprefixer" }
 
 ]
