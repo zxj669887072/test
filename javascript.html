@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <link rel="stylesheet" href="./javas.css" media="screen and (min-width: 600px) and (max-width: 800px)"> -->
+	<link rel="stylesheet" href="./javas.css" media="screen and (max-width: 750px)">
+	<script src="./jquery-2.1.4.min.js"></script>
+	<style>
+		.blur{color:transparent;text-shadow:0 0 5px rgba(0,0,0,.5);}
+		body {
+			margin: 0;
+		}
+		.line-box {
+			padding: 0 80px;
+			background: #ff0;
+		}
+		.x {
+			background: #6ade91;
+		}
+		.rect {
+			display: inline-block;
+			width: 60px;
+			margin: 0 20px;
+			background: #6ade91;
+			overflow: hidden;
+		}
+		.top {
+			height: 300px;
+			vertical-align: top;
+		}
+		.bottom {
+			height: 100px;
+			vertical-align: bottom;
+		}
+		.text-top {
+			height: 200px;
+			vertical-align: text-top;
+		}
+		.text-bottom {
+			height: 400px;
+			vertical-align: text-bottom;
+		}
+		.middle {
+			height: 100px;
+			vertical-align: middle;
+		}
+		.baseline {
+			height: 200px;
+			vertical-align: baseline;
+		}
+		.visible {
+			height: 200px;
+			background: #f00;
+			vertical-align: baseline;
+			overflow: visible;
+		}
+		.box{width:300px;height:300px;line-height: 300px;background-color: #f0f;text-align: center;}
+		.box img{vertical-align: middle;}
+		
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="box">
+			<span>x</span>
+			<img src="./01.png" alt="">
+		</div>
+		<!-- <div id="box">1234</div>
+		<p class="blur">1234文字</p>
+		<form action=""></form>
+		<form action=""></form>
+		<form action=""></form>
+		<form action="">
+			<input type="text">
+			<input type="text">
+			<input type="text">
+			<input type="text">
+			<input type="text">
+		</form> -->
+		<div id="wait">3</div>
+		<div class="line-box">
+			<span class="x">x</span>
+			<span class="rect top">top</span>
+			<span class="x">x</span>
+			<span class="rect bottom">bottom</span>
+			<span class="x">x</span>
+			<span class="rect text-top">text-top</span>
+			<span class="x">x</span>
+			<span class="rect text-bottom">text-bottom</span>
+			<span class="x">x</span>
+			<span class="rect middle">middle</span>
+			<span class="x">x</span>
+			<span class="rect baseline">baseline</span>
+			<span class="x">x</span>
+			<span class="rect visible">
+				<span>baseline</span>
+				<span>visible</span>
+			</span>
+			<span class="x">x</span>
+		</div>
+	</div>
+	<script>
+		(function(){
+			var wait = document.getElementById('wait');
+			var interval = setInterval(function(){
+				var time = --wait.innerHTML;
+				if(time <= 0) {
+					// location.href = href;
+					clearInterval(interval);
+				};
+			}, 1000);
+		})();
+
+		(function(){
+			/*var foos =["a","b","c","d","e"];
+			var bars =["x","y","z"];
+			for(var i = 0;i<foos.length;i++){
+				var foo=foos[i];
+				for(var i =0;i<bars.length;i++){
+					var bar =bars[i]
+				}
+			};
+			console.log(bar,foo)*/
+		})
+		
+		(function(){
+			// 寻找数组中的最大值
+			const max = (arr) => Math.max(...arr);  //Math.max.apply(Math,arr);
+			max([123, 321, 32]) // outputs: 321
+			// 计算数组的总和
+			const sum = (arr) => arr.reduce((a, b) => (a + b), 0)
+			sum([1, 2, 3, 4]) // output: 10
+
+			//数组合并
+			const one = ['a', 'b', 'c'];
+			const two = ['d', 'e', 'f'];
+			const three = ['g', 'h', 'i'];
+			const result = [...one, ...two, ...three];//['a', 'b', 'c','d', 'e', 'f','g', 'h', 'i']
+
+			/*
+				*数组去重
+			 */
+			function un(arr){
+				arr.sort();console.log(arr)
+				let arr1 = [];
+				arr1[0] = arr[0];
+				for(var i = 1;i<arr.length;i++){
+					if(arr[i] != arr1[arr1.length -1]){
+						arr1.push(arr[i])
+					};                
+				}
+				return arr1;
+			};
+			console.log(un([1,11,2,1,3,12]));
+
+			/*
+				*斐波那契（1，1，2，3，5，8）
+			 */
+			function fb(n){
+				var a=1,b=1,c=b;
+				if(n === 1 || n===2){
+					return c
+				}else if(n >2){
+					for(var i = 2;i<n;i++){
+						c = a+b;
+						a = b;
+						b = c;
+					};
+					return c
+				}
+			};
+			console.log(fb(4));
+		}());
+
+			 /*
+				*判断一个对象是否为数组
+			 */
+			 function isArray(arg) {
+					if (typeof arg === 'object') {
+							return Object.prototype.toString.call(arg) === '[object Array]';
+					}
+					return false;
+			}；
+
+			/**
+			 * 判断对象是否为函数，如果当前运行环境对可调用对象（如正则表达式）
+			 * 的typeof返回'function'，采用通用方法，否则采用优化方法
+			 *
+			 * @param {Any} arg 需要检测是否为函数的对象
+			 * @return {boolean} 如果参数是函数，返回true，否则false
+			 */
+			function isFunction(arg) {
+				if (arg) {
+					if (typeof (/./) !== 'function') {
+						return typeof arg === 'function';
+					} else {
+						return Object.prototype.toString.call(arg) === '[object Function]';
+					}
+				} // end if
+				return false;
+			}
+
+		var fullname = 'John Doe';
+		var obj = {
+			fullname: 'Colin Ihrig',
+			prop: {
+				fullname: 'Aurelio De Rosa',
+				getFullname: function() {
+					return this.fullname;
+				}
+			}
+		};
+
+		console.log(obj.prop.getFullname());
+
+		var test = obj.prop.getFullname;
+
+		console.log(test.call(obj.prop));
+
+		/*------------------------------------------------------------------------------------*/
+		function buildUrl(){
+			var qs = "?debug=true";
+			with(location){
+				var url = href +qs;
+			};
+			return url;
+		};
+		console.log(buildUrl());
+		/* 
+			*new date()
+			**function            
+		*/
+		(function(){
+			var now = new Date();console.log(now)
+
+			function create(prop){
+				return function(o1,o2){
+					var a= o1[prop],b= o2[prop];console.log(a,b)
+					/*if(a < b){
+						return -1;
+					}else if(a > b){
+						return 1;
+					}else{
+						return 0
+					}*/
+					return b -a;
+				}
+			};
+			var data = [{name:"zsd",age:18},{name:"asd",age:19}];
+			data.sort(create("name"));console.log(data,data[0].name)    //"zsd"
+			data.sort(create("age"));console.log(data,data[0].name)     //"asd"
+
+			//function
+			
+			function factorial(num){
+				// "use strict";
+				// console.log(arguments.callee)
+				if (num <= 1) {
+					return 1;
+				}else{
+					return num * arguments.callee(num -1); 
+				};
+			};
+			console.log(factorial(5));
+
+			function outer(){inner()};
+			function inner(){console.log(inner.caller,arguments.callee.caller,arguments.caller)}
+			outer();
+
+			'zhēng lùn';
+		}());
+
+		/* 
+			*对象。原型            
+		*/
+		(function(){
+			function Person(name){
+				this.name = name; 
+			};
+			Person.prototype.age = 20;
+
+			Person.prototype.sayName = function(){
+				console.log(this,name);
+			};
+
+
+			var person1 = new Person("zxc");
+			var person2 = new Person("zxb");
+			console.log(person1);
+			console.log(person1.__proto__);
+			console.log(Person.prototype);
+			console.log(person1.__proto__ === Person.prototype);                //true
+
+			console.log(person1.constructor);
+			console.log(person1.__proto__.constructor);
+			console.log(person1.constructor === person1.__proto__.constructor); //true
+			console.log(person1.constructor === Person);                        //true
+
+			
+			console.log(Person.__proto__);
+			console.log(Function.prototype);
+			console.log(Person.__proto__ === Function.prototype);               //true
+
+			console.log(Person.prototype.__proto__);
+			console.log(Function.__proto__ );
+			console.log(Object.prototype);
+			console.log(Person.prototype.__proto__ === Object.prototype);       //true
+
+
+			console.log(Object.prototype.__proto__);                            //null
+
+
+
+		}());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		$(function(){
+			var input4 = $('form').eq(3).find('input')[4];
+			// console.log(input4);
+		   /* function throttle(method,delay,duration){
+		var begin = new Date();
+		var timer = null;
+		return function(){
+			var current = new Date(), args = Array.prototype.slice.call(arguments), context = this;
+			clearTimeout(timer);
+			if(current - begin >= duration){
+				method.apply(context,args);
+				begin = current;
+			}else{
+				timer = setTimeout(function(){
+					method.apply(context,args);
+				},delay);
+			}
+		}
+	}
+
+	$(window).resize(throttle(lg,2000,2000));
+	var n = 1;
+	function lg(){
+		console.log(n++);
+	}*/
+		})
+
+
+	</script>
+</body>
+</html>

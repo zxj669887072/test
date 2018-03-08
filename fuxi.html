@@ -3,9 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>fuxi</title>
+	<link rel="stylesheet" type="text/css" href="">
 	<style>
-		#box1,#box2{border:1px solid #999;margin:10px;padding:10px;width:100px;height:100px;}
-		#box2{box-sizing:border-box;border-radius: 5px;display: flex;}
+		html,body,div,p{margin:0;padding:0;}
+		#box1,#box2{border:1px solid #999;margin:10px;padding:10px;width:100px;height:100px;/*letter-spacing: 5px;*/}
+		#box2{box-sizing:border-box;border-radius: 5px;/*display: flex;*/}
+		/*#box1 p{line-height: 100px;}*/
 		.box1 img{vertical-align: middle;visibility:visible ;}
 		a[attr^="www"]:empty::before{content:attr(href);}
 		/*a[attr^="www"]{display: block;width:20px;height:20px;background: pink;content: " (" attr(href) ")";}*/
@@ -17,7 +20,7 @@
 	<div class="wrapper">
 		<div id="box1">
 			<p>p标签</p>
-			<span>span文字</span>
+			<!-- <span>span文字</span> -->
 		</div>
 		<div id="box2">
 			<p>p标签</p>
@@ -28,7 +31,9 @@
 			<span>自行车</span>
 		</div>
 		<input type="text" name=""><input type="button" name="" value="button"><input type="reset" name="">
-		<a href="baidu.com" attr="www"></a>
+		<a href="baidu.com" attr="www"></a><a href="javascript:void(0);">void</a>
+		<audio></audio>
+		<video></video>
 
 	</div>
 	<script>
@@ -81,6 +86,47 @@
 		console.log(obj1.a); // 2
 		console.log(bar.a); 
 
+
+		sessionStorage.setItem("zxc",123);
+
+		 function Page() {}
+		Page.prototype = {
+		  constructor: Page,
+
+		  postA: function (a) {
+		    console.log('a:' + a);
+		  },
+		  postB: function (b) {
+		    console.log('b:' + b);
+		  },
+		  postC: function (c) {
+		    console.log('c:' + c);
+		  },
+		  check: function () {
+		    return Math.random() > 0.5;
+		  }
+		};
+
+function checkfy(obj) {
+  for (var key in obj) {
+    if (key.indexOf('post') === 0 && typeof obj[key] === 'function') {
+      (function (key) {
+        var fn = obj[key];
+        obj[key] = function () {
+          if (obj.check()) {
+            fn.apply(obj, arguments);
+          }
+        };
+      }(key));
+    }
+  }
+} // end checkfy()
+
+checkfy(Page.prototype);
+var obj = new Page();
+obj.postA('checkfy');
+obj.postB('checkfy');
+obj.postC('checkfy');
 
 	</script>
 </body>
