@@ -89,44 +89,67 @@
 
 		sessionStorage.setItem("zxc",123);
 
-		 function Page() {}
+		function Page() {}
 		Page.prototype = {
-		  constructor: Page,
+			constructor: Page,
 
-		  postA: function (a) {
-		    console.log('a:' + a);
-		  },
-		  postB: function (b) {
-		    console.log('b:' + b);
-		  },
-		  postC: function (c) {
-		    console.log('c:' + c);
-		  },
-		  check: function () {
-		    return Math.random() > 0.5;
-		  }
+			postA: function (a) {
+				console.log('a:' + a);
+			},
+			postB: function (b) {
+				console.log('b:' + b);
+			},
+			postC: function (c) {
+				console.log('c:' + c);
+			},
+			check: function () {
+				return Math.random() > 0.5;
+			}
 		};
 
-function checkfy(obj) {
-  for (var key in obj) {
-    if (key.indexOf('post') === 0 && typeof obj[key] === 'function') {
-      (function (key) {
-        var fn = obj[key];
-        obj[key] = function () {
-          if (obj.check()) {
-            fn.apply(obj, arguments);
-          }
-        };
-      }(key));
-    }
-  }
-} // end checkfy()
+		function checkfy(obj) {
+			for (var key in obj) {
+				if (key.indexOf('post') === 0 && typeof obj[key] === 'function') {
+					(function (key) {
+						var fn = obj[key];
+						obj[key] = function () {
+							if (obj.check()) {
+								fn.apply(obj, arguments);
+							}
+						};
+					}(key));
+				}
+			}
+		} // end checkfy()
 
-checkfy(Page.prototype);
-var obj = new Page();
-obj.postA('checkfy');
-obj.postB('checkfy');
-obj.postC('checkfy');
+		checkfy(Page.prototype);
+		var obj = new Page();
+		obj.postA('checkfy');
+		obj.postB('checkfy');
+		obj.postC('checkfy');
+
+		var frag = document.createDocumentFragment();
+		var _li = document.createElement("li");
+		_li.innerHTML = "createLi";
+		frag.appendChild(_li);
+		box1.appendChild(frag);
+
+		(function(){
+			function normalize(arr){
+				if(arr && Array.isArray(arr)){
+					var map = {};
+					for(var i =0;i<arr.length;i++){
+						if(arr[i] in map){
+							arr.splice(i,1);
+						}else{
+							map[arr[i]] = true;
+						}
+					};
+					return arr;
+				}
+			};
+			console.log(normalize([1,2,3,3,4,5,2]));
+		})();
 
 	</script>
 </body>
