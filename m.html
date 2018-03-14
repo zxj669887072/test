@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>m</title>
+    <style>
+        p,div{margin:0;padding:0;}
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+.btn {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  border-radius: 4px;
+  padding: 1em;
+  width: 100%;
+  margin: 1em 0;
+  color: #fff;
+  background-color: #ff5777;
+}
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  display: none;
+  display: block;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .3);
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  z-index: 2;
+  background-color: #f6f6f6;
+  overflow-y: auto;
+}
+    .number li {
+    width: 18px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.number li span {
+    display: block;
+    transform: translateY(0%);
+}
+
+.number li.active span {
+    animation: move 3s;
+    animation-fill-mode: forwards; // 让动画结束后保持最后一帧
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+    .script1 {
+    width: 0;
+    height: 0;        
+    border-right: 10px solid transparent;
+    border-top: 15px solid #c59c53;
+}
+    .rongqi {
+        height: 18px;
+        overflow: hidden;/*//设置超出隐藏*/
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .wenan{//文案
+        float: left;
+        position: relative;    /*//设置相对定位*/
+        z-index: 3;            /*//设置层级不被三角形挡住*/
+        height: 18px;
+        padding-left: 4px;
+        line-height: 19px;
+        color: #ff0;
+        font-size: 10px;background:#c59c53;
+    }
+    .script {
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        border-top: 30px solid #c59c53;    /*//这里的30px实际上远远超出容器的高度*/
+        float: right;                      /*就是为了高度超出被挡住做出梯形的效果，兼容各种机型*/
+        margin-left: -9px;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="script1"></div> -->
+    <p class="rongqi">
+        <span class="wenan">跟团游</span>
+        <span class="script"></span>
+    </p>
+    <!-- <div class="page">
+    这里多添加一些，直至出现滚动条
+    <p>页面</p>
+    <p>页面</p>
+    <button class="btn">打开蒙层</button>
+    <p>页面</p>
+      </div>
+      <div class="container">
+    <div class="layer"></div>
+    <div class="content">
+      这里多添加一些，直至出现滚动条
+      <p>蒙层</p>
+      <p>蒙层</p>
+      <p>蒙层</p>
+    </div>
+      </div> -->
+    <ul id="main" class="number">
+        <li class="group">
+            <span class="old">1</span>
+            <span class="new">1</span>
+        </li>
+        <li class="group">
+            <span class="old">,</span>
+            <span class="new">,</span>
+        </li>
+        <li class="group">
+            <span class="old">4</span>
+            <span class="new">1</span>
+        </li>
+        <li class="group">
+            <span class="old">5</span>
+            <span class="new">5</span>
+        </li>
+        <li class="group">
+            <span class="old">6</span>
+            <span class="new">2</span>
+        </li>
+    </ul>
+<script>
+    var $main = document.querySelector('#main');
+
+// 填充数字
+function update(fromArr, toArr) {
+    // 从个位数开始对齐位数
+    fromArr = fromArr.reverse();
+    toArr = toArr.reverse();
+    
+    if (fromArr.length > toArr.length) {
+        toArr.length = fromArr.length
+    } else {
+        fromArr.length = toArr.length
+    }    
+    fromArr = fromArr.reverse();
+    toArr = toArr.reverse();
+    // 渲染节点并激活动画
+    var numberHTML = ''
+    for (var i = 0; i < toArr.length; i++) {
+        // 如果该位数的数字没有发生变化，则没有过渡效果
+        if (fromArr[i] !== toArr[i]) {
+            numberHTML += ('<li class="group active">' +
+                '<span class="old">' + (fromArr[i] || 0) + '</span>' +
+                '<span class="new">' + (toArr[i] || 0) + '</span>' +
+            '</li>');
+        } else {
+            numberHTML += ('<li class="group">' +
+                '<span class="old">' + (fromArr[i] || 0) + '</span>' +
+                '<span class="new">' + (toArr[i] || 0) + '</span>' +
+            '</li>');
+        }
+    }
+    
+    if (numberHTML) {
+        $main.innerHTML = numberHTML;
+    }
+}
+update([1,',',2,3,4],[1,2,',',2,3,5]);
+
+</script>
+
+</body>
+</html>

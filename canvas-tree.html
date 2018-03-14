@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canTree</title>
+    <style>
+        .icon{
+            display: inline-block;width: 16px;height: 20px;background-color:currentColor;
+        }
+        .link:hover{color:#333;}
+        #shadowBox {
+  background-color: #ddd;box-sizing:border-box;
+  margin: 0px auto;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0px 8px 10px gray,
+        -10px 8px 15px gray, 10px 8px 15px gray;
+}
+
+        .icon {
+            display: inline-block;
+            width: 20px; 
+            height: 20px;
+            overflow: hidden;
+        }
+        .icon-del {
+          background: url(img02.png) no-repeat center;
+        }
+        .icon > .icon {
+          position: relative;
+          left: -20px;
+          border-right: 20px solid transparent; /*下文注意点 2 有解释*/
+          -webkit-filter: drop-shadow(20px 0);
+          filter: drop-shadow(20px 0);    
+        }
+
+        .ant-checkbox-wrapper {
+            cursor: pointer;
+            font-size: 10px;
+            display: inline-block;
+            -webkit-text-size-adjust: none; // 不支持
+            transform: scale(0.9);
+        }
+        /*#qw{color:darkblue;}*/
+        .parent{width:200px;height:200px;border:1px solid pink;}
+        .child {background-color:green;height:50px;
+            width: 100px;
+            /*float: left;
+            position: relative;
+            left: 50%;
+            margin-left: -50px;*/
+        }
+        .parent {
+            position: relative;
+        }
+        .child {
+            position: absolute;
+            width: 100px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }   
+        .cen{width: 100px;
+            height: 100px;background:rgba(192,23,214,.8);
+            margin: auto;
+            position: absolute;
+            /*//absolute is ok*/
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-top:3px solid;
+            border-color:pink red green yellow;
+            filter:drop-shadow(5px 5px 10px black)
+        }
+        .cen::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: -50%;
+  bottom: 0;
+  width: 200%;
+  height: 1px;
+  background: #c3c3c3;
+  -webkit-transform: scale(0.5);
+
+}
+        .cen{transition:all 2s;animation:mymove 3s linear;}
+        @keyframes mymove{
+            from {left:0px;}
+            to {left:200px;}
+        }
+        .cen:hover{background-color: #12a2f4;transform:rotate(110deg) scale(1.5);
+
+        }
+        ::-webkit-scrollbar {
+  width: 1px;
+  height: 4px;
+  background-color: #F5F5F5;
+}
+        
+        .clearfix:after{content:'';clear:both;display: block;height:0;}
+        .fl{float:left;width:100px;height: 100px;border:1px solid #aaff11;}
+        .mar-l{margin-right: 25px;margin-bottom: 25px;}
+        .mar-r{margin-left: 25px}
+        .mar{margin-top: 25px;width:100px;height:100px;}
+        .mar-t{margin-bottom: 25px;width:100px;height:100px;border:1px dotted pink;}
+    </style>
+</head>
+<body>
+    <a href="#" class="link"><i class="icon"></i>返回</a>
+    <div class="" id="shadowBox">shadow</div>
+    <p><strong>原始图标</strong></p>
+<i class="icon icon-del"></i>
+<p><strong>可以变色的图标</strong></p>
+<i class="icon"><i class="icon icon-del"></i></i>
+    <input type="text">
+    <input type="password">
+    <p class="ant-checkbox-wrapper">小字体</p>
+    <p>字体</p>
+    <h1>最小生成 顶点0开始</h1>
+    <div id="wrapper">
+        <div class="all-edges">
+            <h2 class="title"></h2>
+            <p class="edge-list"></p>
+        </div>
+        <!-- <canvas id="canvas" width="770" height="770"></canvas> -->
+        <div class="min-edges">
+            <h2 class="title">最小生成树</h2>
+            <p class="edge-list"></p>
+        </div>
+
+        <div id="qw">
+            <h1>这是一段测试文字</h1>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <div class="cen">center</div>
+    <div id="parent-list">
+        <ul>
+            <li id="li-1">1</li>
+            <li id="li-2">2</li>
+            <li id="li-3">3</li>
+            <li id="li-4">4</li>
+            <li id="li-5">5</li>
+        </ul>
+
+    </div>
+    <div class="clearfix">
+        <div class="fl mar-l">l</div><div class="fl mar-r"></div>
+    </div>
+        <div class="mar-t"></div>
+        <div class="mar">3</div>
+
+    <script>
+        var parentList = document.getElementById("parent-list");
+        parentList.addEventListener("click",function(){
+          var target = event.target;
+          if(target.nodeName.toLowerCase() === "li"){
+            console.log(target,target.firstChild)
+            // alert(target.firstChild.nodeValue);
+          }
+        },false);
+        /*_random() {
+            return {
+                x: random(vertex) + 1,
+                y: random(vertex) + 1
+            }
+        };
+        geneVertexAxis() {
+            let i = 0
+            const vertexList = []
+            while (vertexList.length < vertex) {
+                const p = this._random()
+                if (this.axis[p.x][p.y] == -1) {
+                    this.axis[p.x][p.y] = i
+                    this.vertexPoints[i] = p
+                    vertexList.push(i)
+                    i++
+                }
+            }
+        };
+        geneEdge() {
+            for (let i = 0; i < edge; i++) {
+                let v1 = random(vertex)
+                let v2 = random(vertex)
+                if (v1 !== v2) {
+                    let e = `${v1}-${v2}-${random(maxWeight)}`
+                    let eReverse = `${v2}-${v1}`
+                    if (!this._repeat(`${v1}-${v2}`) && !this._repeat(eReverse)) {
+                        this.edgeList.push(e)
+                    }
+                }
+            }
+        };
+        /**
+     * 计算过两圆心的直线与圆的交点
+     * @param {object} p1  圆心1位置
+     * @param {object} p2  圆心2位置
+     * @param {number} R   半径
+     */
+
+    /*export function calculateInters(p1, p2, R) {
+        const xAixsDis = Math.abs(p1.x - p2.x)
+        const yAixsDis = Math.abs(p1.y - p2.y)
+        const disOfTwoPoint = Math.sqrt(xAixsDis * xAixsDis + yAixsDis * yAixsDis).toFixed(2)
+        const x = (R / disOfTwoPoint * xAixsDis).toFixed(2)
+        const y = (R / disOfTwoPoint * yAixsDis).toFixed(2)
+
+        let p1X = x
+        let p1Y = y
+        let p2X = x
+        let p2Y = y
+
+        if (p1.x <= p2.x && p1.y > p2.y) {
+            p1Y = -p1Y
+            p2X = -p2X
+        }
+        if (p1.x <= p2.x && p1.y <= p2.y) {
+            p2X = -p2X
+            p2Y = -p2Y
+        }
+        if (p1.x > p2.x && p1.y > p2.y) {
+            p1X = -p1X
+            p1Y = -p1Y
+        }
+        if (p1.x > p2.x && p1.y <= p2.y) {
+            p1X = -p1X
+            p2Y = -p2Y
+        }
+
+        return {
+            p1Inters: {
+                x: p1.x + Number(p1X),
+                y: p1.y + Number(p1Y)
+            },
+            p2Inters: {
+                x: p2.x + Number(p2X),
+                y: p2.y + Number(p2Y)
+            }
+        };
+    }
+    _drawMinLine(edge, edges, i, vertexPoints) {
+        const { ctx } = this
+        ctx.lineWidth = 3
+        setTimeout(() => {
+            ctx.beginPath();
+            let p1 = edge.v
+            let p2 = edge.w
+            this.showMinEdgesWeightInfo(edges, i)
+            this._drawLine(vertexPoints[p1], vertexPoints[p2])
+            ctx.stroke();
+        }, (i + 1) * 1000)
+    }*/
+
+        function getElement(selector) {
+            // console.log(this)
+          this.style = document.querySelector(selector).style;
+        }
+
+        getElement.prototype.color = function(color) {
+          this.style.color = color;
+          return this;
+        }
+        getElement.prototype.background = function(bg) {
+          this.style.backgroundColor = bg;
+          return this;
+        }
+        getElement.prototype.fontSize = function(size) {
+          this.style.fontSize = size;
+          return this;
+        }
+
+        //调用
+        var el = new getElement('#qw');console.log(el)
+        el.color('red').background('pink').fontSize('12px');
+        /*------------------------------------------------------------------------*/
+        function set(selector, color) {
+          var el = document.querySelector(selector);
+          el.style.color = color;
+          // el.style.backgroundColor = color;
+          return el;
+        };
+        //需要设置字体、背景颜色和大小
+        function setAgain (selector, color, px) {
+          var el = set(selector, color)
+          el.style.fontSize = px;
+          return el;
+        };
+        set('#qw','gold');
+        setAgain('#qw','green','20px');
+        /*------------------------------------------------------------------------*/
+
+        var result = [
+            {
+                subject: 'math',
+                score: 88
+            },
+            {
+                subject: 'chinese',
+                score: 95
+            },
+            {
+                subject: 'english',
+                score: 80
+            }
+        ];
+        function getSum(obj){
+            let sum = 0;
+            for(var key in obj){
+                console.log(key,obj[key],obj[key].score);
+                
+                sum += obj[key].score;
+            };console.log(sum)
+        };
+        getSum(result);
+
+        var sum = result.reduce(function(prev, cur) {console.log(prev,cur)
+            return cur.score + prev;
+        }, 0);
+        var dis = {
+            math: 0.5,
+            chinese: 0.3,
+            english: 0.2
+        };
+        var qsum = result.reduce(function(prev, cur) {
+            let newSub = {
+                subject: cur.subject,
+                score: cur.score * dis[cur.subject]
+            };
+            // return (function(prev, cur) {
+            //     return cur.score + prev;
+            // })(prev, newSub)
+            return prev + newSub.score;
+        }, 0);
+        console.log(qsum);
+
+
+
+        /*------------------------------------------------------------------------*/
+        var foo = function(){
+            var a=3,b=5;
+            var bar = function(){
+                var b = 7,c=11;
+                a+= b + c;
+            };
+            console.log(a,b);            
+            bar();
+            console.log(a,b);
+            // console.log(c);
+        };
+        foo();
+        /*----------------------------*/
+        var arrString = 'abcdaabc';
+        var cnzzNum = arrString.split('').reduce(function(res, cur) {
+            res[cur] ? res[cur] ++ : res[cur] = 1
+            return res;
+        }, {});
+        console.log(cnzzNum);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

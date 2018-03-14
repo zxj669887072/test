@@ -6,6 +6,24 @@
 	<link rel="stylesheet" type="text/css" href="">
 	<style>
 		html,body,div,p{margin:0;padding:0;}
+		input::-webkit-input-placeholder { 
+			/* WebKit browsers */ 
+			font-size:18px;
+			color: green;
+		} 
+		input::-moz-placeholder { 
+			/* Mozilla Firefox 19+ */ 
+			font-size:18px;
+			color: green;
+		} 
+		input:-ms-input-placeholder { 
+			/* Internet Explorer 10+ */ 
+			font-size:18px;
+			color: green;
+		}
+		.left1,.right1{height:100px;background-color: pink;}
+		/*.right1{margin-right: 100px;}*/
+		.left1{width:100px;background-color: purple;float:right;}
 		#box1,#box2{border:1px solid #999;margin:10px;padding:10px;width:100px;height:100px;/*letter-spacing: 5px;*/}
 		#box2{box-sizing:border-box;border-radius: 5px;/*display: flex;*/}
 		/*#box1 p{line-height: 100px;}*/
@@ -13,11 +31,13 @@
 		a[attr^="www"]:empty::before{content:attr(href);}
 		/*a[attr^="www"]{display: block;width:20px;height:20px;background: pink;content: " (" attr(href) ")";}*/
 		.box1{visibility: hidden;}
-
+		.flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
 	</style>
 </head>
 <body>
 	<div class="wrapper">
+		<div class="left1">left</div>
+		<div class="right1"></div>
 		<div id="box1">
 			<p>p标签</p>
 			<!-- <span>span文字</span> -->
@@ -30,7 +50,7 @@
 			<img src="01.png" alt="">
 			<span>自行车</span>
 		</div>
-		<input type="text" name=""><input type="button" name="" value="button"><input type="reset" name="">
+		<input type="text" name="" placeholder="input"><input type="button" name="" value="button"><input type="reset" name="">
 		<a href="baidu.com" attr="www"></a><a href="javascript:void(0);">void</a>
 		<audio></audio>
 		<video></video>
@@ -150,6 +170,15 @@
 			};
 			console.log(normalize([1,2,3,3,4,5,2]));
 		})();
+
+
+		function setElement(selector, opt) {
+			const { color, width, height } = opt;			
+			color && (document.querySelector(selector).style.color = color);
+			width && (document.querySelector(selector).style.width = width);
+			height && (document.querySelector(selector).style.height = height);
+		};
+		setElement("#box1",{color:"purple"});
 
 	</script>
 </body>

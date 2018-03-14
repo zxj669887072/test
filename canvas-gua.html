@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>can-gua</title>
+    <style>
+        *{margin:0;padding:0;}
+        .box{position: relative;margin:20px;}
+        .con{width:200px;height:200px;border:1px solid #999;font-size:30px;line-height: 200px;text-align: center;}
+        #can{position:absolute;top:1px;left:1px;z-index: 2;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="con">谢谢惠顾</div>
+            <canvas width="200" height="200" id="can">您的浏览器 不支持</canvas>
+        </div>
+        <button>点击</button>
+
+        <!-- <canvas width="200" height="200" id="can1">您的浏览器 不支持</canvas> -->
+
+    </div>
+
+
+    <script>
+        var box = document.querySelector(".con");
+        var can = document.querySelector("#can");
+        // var can1 = document.querySelector("#can1");
+
+        if(can.getContext){
+            var context = can.getContext("2d");
+            context.strockStyle = "#fff";
+            context.fillStyle = "#999";
+            context.font ="18px Arial";
+            context.textAlign ="center";
+
+            context.fillRect(0,0,200,200);
+            context.fillStyle = "#fff";
+            context.fillText('开始刮奖',100,100);
+
+
+
+        /*context.strokeStyle = "#0ff";context.save();
+        context.strokeStyle = "#ff0";
+        context.strokeRect(160,10,50,30);
+        context.restore();
+        context.strokeRect(160,60,50,30);*/
+
+    /*context.beginPath() //注意此处  
+    context.fillStyle = "#FF00FF"  
+    context.arc(100, 100, 50, 0, Math.PI * 2, true)  
+    context.fill()  
+    context.closePath() //注意此处  
+
+    context.beginPath() //注意此处  
+    context.fillStyle = "#FF0000"  
+    context.arc(50, 50, 50, 0, Math.PI * 2, true)  
+    context.fill()  
+    context.closePath() //注意此处 */ 
+            /*context.strokeStyle = "pink";context.save();
+            context.strokeStyle = "#0ff";context.save();
+            context.strokeStyle = "#ff0";
+            context.beginPath();
+            
+            
+            context.arc(100,100,99,0,2*Math.PI,false);context.stroke();context.beginPath();
+            // context.moveTo(194,100);
+            // context.lineTo(100,100);
+            context.restore(); 
+            
+            context.arc(100,100,94,0,2*Math.PI,false);
+            context.translate(100,100);
+            // context.lineTo(25,25);
+            context.rotate(1);
+            context.moveTo(0,0);
+            context.lineTo(0,-85);
+
+            context.stroke();
+            // context.closePath();
+            context.beginPath();
+            // context.restore();
+            // console.log(context)
+            context.strokeStyle = "blue";
+            // console.log(context.strokeStyle)
+
+            context.moveTo(0,0);
+            context.lineTo(-65,0);
+
+            context.stroke();
+
+            context.strokeRect(0,0,50,50);
+            context.scale(2,2);
+            context.strokeRect(0,0,50,50)*/
+        
+
+        };
+        var isClear = false,begx=0,begy=0;
+        can.onmousedown = function(event){
+            var e = e || window.event ;
+            console.log(e);
+            isClear = true;
+            begx = e.clientX - 21;
+            begy = e.clientY - 21;//console.log(begx,begy)
+        };
+        can.onmouseup = function(){
+            isClear = false;
+        };
+        can.onmousemove = function(e){//console.log(begx,begy)
+            e.stopPropagation();
+            if(!isClear){
+                return;
+            };//console.log(isClear)
+            var e = e || window.event;
+            let x = e.clientX - 21;
+            let y = e.clientY - 21;
+            context.globalCompositeOperation = 'destination-out';
+            /*context.lineCap = 'round';
+            context.lineJoin = "round";
+            context.lineWidth = '10';*/
+            context.beginPath();
+            // context.moveTo(begx,begy);
+            // context.lineTo(x,y);
+            // context.stroke();
+            context.arc(x,y,10,0, Math.PI * 2,false);
+            context.fill();
+            let j = 0,imgData = context.getImageData(0,0,200,200).data;
+            for(var i =0;i<imgData.length;i+=4){
+                if(imgData[i]&&imgData[i+1]&&imgData[i+2]&&imgData[i+3]){
+                    j++;
+                }
+            };console.log(j);
+            if(j <= 200*200*0.6){
+                context.clearRect(0,0,200,200)
+            };
+
+        }
+            
+        const arr = [10, 12, 15, 21];
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function() {
+    console.log(`The value ${arr[i]} is at index: ${i}`);
+  }, (i+1) * 1000);
+} 
+
+var result = [];
+for (var i=0; i < 5; i++) {
+  result.push( function() { return i } );
+};
+
+var qw ={username:'qwe'};
+var as = {
+    username:'asd',
+    say:function(z,x){
+        console.log(`you say ${z} ${x} ${this.username}`)
+    }
+}
+var ed = as.say.bind(qw,'zzz');
+
+    </script>
+</body>
+</html>

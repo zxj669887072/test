@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+</head>
+<body>
+    <div id="app">
+        <a id="download" href="http://res.allplay365.com/download/qwan_last.apk" download="全民玩" >全民玩{{name}}</a>
+        <div>
+            <img src="img_03.jpg" alt="">
+            <img src="img_03.jpg" alt="">
+        </div>
+        <div id="box"></div>
+        <button class="btn">点击</button>
+    </div>    
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="vue.min.js"></script>
+    <script src="vue-resource.min.js"></script>
+    <script>
+        $(function(){
+            function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+                if(i<10){ 
+                    i = "0" + i; 
+                } 
+                return i; 
+            } 
+            function GetRTime(){
+                // var EndTime= new Date(2017,5,12,18); //截止时间 前端路上 http://www.51xuediannao.com/qd63/
+                var EndTime= new Date('2017/11/12 18:00:00');
+                var NowTime = new Date();
+                var t =EndTime.getTime() - NowTime.getTime();
+               /*var d=Math.floor(t/1000/60/60/24);
+               t-=d*(1000*60*60*24);
+               var h=Math.floor(t/1000/60/60);
+               t-=h*60*60*1000;
+               var m=Math.floor(t/1000/60);
+               t-=m*60*1000;
+               var s=Math.floor(t/1000);*/
+
+                        var d = parseInt(t / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 
+                        var h = parseInt(t / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 
+                        var m = parseInt(t / 1000 / 60 % 60, 10);//计算剩余的分钟 
+                        var s = parseInt(t / 1000 % 60, 10);//计算剩余的秒数 
+                         
+
+                // var d=Math.floor(t/1000/60/60/24);
+                // var h=Math.floor(t/1000/60/60%24);
+                // var m=Math.floor(t/1000/60%60);
+                // var s=Math.floor(t/1000%60);
+                d = checkTime(d); 
+                h = checkTime(h); 
+                m = checkTime(m); 
+                s = checkTime(s);
+                $('#box').html(d + "天"+h + "时"+m + "分"+s + "秒");
+            }
+            setInterval(GetRTime,1000);
+            var xml;
+            function creatXML(){
+                
+                if(window.XMLHttpRequest){
+                    xml = new XMLHttpRequest();console.log(xml,12)
+                }else{
+                    xml = new ActiveXObject(Micresoft.XMLHTTP);
+                }
+            }
+            $('.btn').on('click',function(){
+                creatXML();
+                xml.onreadystatechange=function(){
+                    if(xml.readyState == 4 && xml.status == 200){
+                        alert(xml.responseText);
+                        console.log(xml)
+                    }
+                }
+                xml.open('get','test.txt',true);
+                // xml.open('get','test.txt',false);
+                xml.send();
+                // console.log(xml.responseText)
+                // document.write(xml.responseText)
+            })
+        });
+        
+         new Vue({
+            el:'#app',
+            data:{name:""},
+            created:function(){
+                var url="text.php";
+            
+                this.$http.get(url).then(function(data){
+                    var json=data.body;
+                    console.log(data,json);
+                    this.name = json;console.log(this.name)
+                    // this.$set('json',data.data)
+                    console.table(json);
+                    // this.data=eval("(" + json +")");
+                    // console.log(this.data)
+                },function(response){
+                    console.info(response);
+                })
+//                 var url="test.txt";
+//           this.$http.get(url).then(function(data){
+//              var json=data.body;
+//             this.$set('json',data.data);
+// //             console.table(json)
+//           },function(response){
+//             console.info(response);
+//             if(response){
+//               alert('e')
+//             }
+//           })
+            }
+          });
+    </script>
+    <script>   
+        function sum(a,b){
+            console.log(this,115);
+            console.log(a+b)
+        };
+        sum(1,2);
+        sum.call(null,1,2);
+        sum.apply(null,[1,2]); 
+
+        var info = 'tom';
+        function foo(){
+            var info = "jerry";
+            console.log(this,this.info);
+        }
+        foo();
+        foo.call();
+        foo.apply();
+
+        var obj = {info:'spike'};
+        foo.call(obj);
+
+
+        var arr = [132,23,5,21,1234,23];
+        var arr1 = arr.sort(function(a,b){
+            return b-a;
+        });console.log(arr1,arr1[0])
+
+        var max = Math.max.apply(null,arr);
+        console.log(max)
+
+        var qwe = {
+            a:function(){
+                console.log(this);
+                (function(){
+                    console.log(this)
+                }())
+            }
+        };
+        qwe.a();
+    </script>
+    <script>
+        $().ready(function(){
+
+        if(!sessionStorage.getItem("sessionValue")){
+          localStorage.setItem("getSession", Date.now());
+        }else{
+          $("#session-data-panel").text("Session: " + sessionStorage.getItem("sessionValue"));
+        };
+
+        
+        window.addEventListener("storage", function(event){ console.log(event);
+          if(!event.newValue){
+            return ;
+          }
+          if(event.key == "getSession"){
+            localStorage.setItem("storeSessionData", sessionStorage.getItem("sessionValue"));
+            localStorage.removeItem("storeSessionData");
+          }
+          if(event.key == "storeSessionData"){
+            sessionStorage.setItem("sessionValue", event.newValue);
+            $("#session-data-panel").text("Session: " + sessionStorage.getItem("sessionValue"));
+            localStorage.removeItem("getSession");
+          }
+          if(event.key == "updateSession"){
+            sessionStorage.setItem("sessionValue", event.newValue);
+            $("#session-data-panel").text("Session: " + sessionStorage.getItem("sessionValue"));
+            localStorage.removeItem("updateSession");
+          }
+        });
+        $("#create-session-btn").click(function(){
+          var t = Math.random() * 100;            
+          sessionStorage.setItem("sessionValue", t);
+          $("#session-data-panel").text("Session: " + t);
+          localStorage.setItem("updateSession", t);
+        });
+    });
+    </script>
+    <div id="session-data-panel">Session: No Session</div>
+  <button id="create-session-btn">Click create a random session</button>
+</body>
+</html>
