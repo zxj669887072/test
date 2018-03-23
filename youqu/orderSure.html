@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="./css/orderSure.css">
+	<script src="./js/jquery-2.1.4.min.js"></script>
+	<script src="./js/base.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="head" class="clearfix">
+			<div class="fl"><a href="./shopCar.html"><img src="./images/left-2.png" alt="" style="vertical-align: middle;"></a></div><span>我的订单</span>
+		</div>
+		<div id="orderMsg">
+			<p>收货人：<span class="ordername">小明</span></p>
+			<p class="address">收货地址：<span class="orderAddress">广东省深圳市南山区某某街某某小区101</span></p>
+			<p class="tel">1313113113</p>
+		</div>
+						<!-- 订单商品 -->
+		<div class="ordergoods">
+						<!-- 店铺名称 -->
+			<div class="shop">
+				<img src="./images/brand.png" alt="" class="shoppic"><span class="shopName">史黛丝</span>
+			</div>
+						<!-- 商品详情 -->
+			<div class="goods clearfix">
+				<div class="goodspic fl"><img src="./images/orderSure1.jpg" alt=""></div>
+				<div class="goodsinfo fl">
+					<p class="goodsname">镂空绣花露乳吊带连体衣夜字号</p>
+					<div class="goods-btm">
+						<p class="fl price">
+							<strong class="">￥<span class="goodsprice">88.00</span></strong>
+							<span>共<span class="goodsweight">6.00</span>kg</span>
+						</p>
+						<p class="fr">X<span class="goodsnum">2</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="tip">此商品包邮，支持7天退换。</div>
+			<div class="goods clearfix">
+				<div class="goodspic fl"><img src="./images/orderSure1.jpg" alt=""></div>
+				<div class="goodsinfo fl">
+					<p class="goodsname">镂空绣花露乳吊带连体衣夜字号</p>
+					<div class="goods-btm">
+						<p class="fl price">
+							<strong class="">￥<span class="goodsprice">88.00</span></strong>
+							<span>共<span class="goodsweight">6.00</span>kg</span>
+						</p>
+						<p class="fr">X<span class="goodsnum">2</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="tip">此商品包邮，支持7天退换。</div>
+		</div>
+		<div class="brank" style="height:.9rem;"></div>
+						<!-- 提交订单 -->
+		<div id="sure">
+			<div class="fl totalprice">合计：￥333.30</div>
+			<div class="fr" id="submit">提交订单</div>
+		</div>
+	</div>
+	<script src="./js/orderSure.js"></script>
+</body>
+</html>

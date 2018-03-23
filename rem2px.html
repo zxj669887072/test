@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<title>rem2px</title>
+	<style>
+		html,body,div,p{margin:0;padding:0;}
+		.clearfix::after{content:"";display: block;clear:both;visibility: hidden;height:0;}
+		.clearfix{zoom:1;}
+		 .wrapper{width:7.5rem;margin:0 auto;}
+		.container{width:100%;height:.8rem;background: pink;margin-bottom:.2rem ;}
+		.box1{width:2rem;height:5rem;background-color: green;} 
+
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<!-- <div class="left1 clearfix">left1</div>
+			<div class="left2 clearfix">left2</div>
+			<div class="left3 clearfix">left3</div> -->
+		</div>
+		<div class="box1"></div>
+	</div>
+	<script>
+		(function(){a=1;var b =2;
+			function w() {
+				var r = document.documentElement;
+				var a = r.getBoundingClientRect().width;
+				var dpr = window.devicePixelRatio;
+				var rem;
+				if (a > 750 ){
+					a = 750;
+				} 
+				//750/w = 100/font-size
+				rem = a / 7.5;
+				/*rem = document.documentElement.clientWidth * dpr / 10;*/
+				r.style.fontSize = rem + "px";
+			}
+			var t;
+			w();
+			window.addEventListener("resize", function() {
+				clearTimeout(t);
+				t = setTimeout(w, 300);
+			}, false);
+		})();console.log(a,b)
+
+	</script>
+</body>
+</html>

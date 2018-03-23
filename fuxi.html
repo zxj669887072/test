@@ -32,6 +32,7 @@
 		/*a[attr^="www"]{display: block;width:20px;height:20px;background: pink;content: " (" attr(href) ")";}*/
 		.box1{visibility: hidden;}
 		.flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
+		/*option:selected{color:red;}*/
 	</style>
 </head>
 <body>
@@ -54,7 +55,10 @@
 		<a href="baidu.com" attr="www"></a><a href="javascript:void(0);">void</a>
 		<audio></audio>
 		<video></video>
-
+		<select name="" id="">
+			<option value="">1</option>
+			<option value="">2</option>
+		</select>
 	</div>
 	<script>
 		var box1 = document.querySelector(".box1");console.log(box1.className,box1.classList)

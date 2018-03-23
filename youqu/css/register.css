@@ -1,0 +1,37 @@
+body, div, ul, p, li, h1, h2, h3, h4, h5, h6, a, img,input,button{ margin: 0; padding: 0; }
+body { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; color: #333; font-size: 14px;overflow-x:hidden;background: #fff;  }
+a { text-decoration: none; color: #333; -webkit-tap-highlight-color: transparent;}
+ul, li { list-style: none; }
+img { /* display: block; */ border: none; max-width: 100%; vertical-align: top;outline: none;}
+input,button{border:none 0;outline: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { display: block; content: ""; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+.center { text-align: center; }
+.indent{text-indent:2em;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.wrapper{padding-top: .6rem;}
+
+#back{margin-bottom: .2rem;}
+#back .goback{margin-left:.2rem;font-size: 16px;}
+#back img{}
+#back .tip{font-size: 20px;top:-26px;}
+
+				/* 输入框 */
+#form{padding:0 .65rem;}
+#form .input{width:100%;height:.78rem;box-sizing: border-box;border:1px solid #d1d1d1;border-radius: 3px;padding:.2rem .25rem;/* margin-bottom: .2rem; */font-size: 16px;}
+#form input{font-size: 16px;}
+#form #code{margin-bottom: .4rem;border-top:none 0;}
+#form .user,#form .code{height:100%;}
+#form #tel .num{margin-right:.4rem;}
+#form .code{width:50%;}
+#form #code .btn_code{width:1.8rem;height:.4rem;background: #ff709c;border-radius: 5px;font-size: 14px;color: #fff;text-align: center;line-height: .4rem;}
+#form .btn_register{margin:0 0 .75rem;box-sizing: border-box;width:100%;height:.78rem;border:1px solid #e7e1e3;border-radius: 3px;background: #ffafc8;font-size: 20px;color: #fff;}
+				/* 社交账号登录 */
+#form #cooperation_title{padding:0 .53rem;border-bottom:1px solid #c9c9c9;margin-bottom: .65rem;}
+#cooperation_title .title{font-size: 16px;display: inline-block;top:10px;padding:0 .2rem;background: #fff;}
+
+#cooperation .item{padding:0 .6rem;display: flex;justify-content: space-between;align-items: center;}
+#cooperation .item img{width:.87rem;height:.87rem;}

@@ -69,6 +69,8 @@
 			<span>x</span>
 			<img src="./01.png" alt="">
 		</div>
+		<audio src="tiantang.mp3" controls></audio>
+
 		<!-- <div id="box">1234</div>
 		<p class="blur">1234文字</p>
 		<form action=""></form>
@@ -184,7 +186,7 @@
 							return Object.prototype.toString.call(arg) === '[object Array]';
 					}
 					return false;
-			}；
+			};
 
 			/**
 			 * 判断对象是否为函数，如果当前运行环境对可调用对象（如正则表达式）
@@ -230,7 +232,49 @@
 					width: d.body.clientWidth,
 					height: d.body.clientHeight
 				};
+			};
+
+
+			/**
+			 * 页面可见性事件
+			 */
+			var hiddenProperty = 'hidden' in document ? 'hidden' :    
+				'webkitHidden' in document ? 'webkitHidden' :    
+				'mozHidden' in document ? 'mozHidden' :    
+				null;
+			var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+			/*var hidden, visibilityChange; 
+			if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
+			  	hidden = "hidden";
+			  	visibilityChange = "visibilitychange";
+			} else if (typeof document.msHidden !== "undefined") {
+			  	hidden = "msHidden";
+			  	visibilityChange = "msvisibilitychange";
+			} else if (typeof document.webkitHidden !== "undefined") {
+			  	hidden = "webkitHidden";
+			  	visibilityChange = "webkitvisibilitychange";
+			};*/
+			var audioE = document.querySelector("audio");console.log(audioE)
+			var onVisibilityChange = function(){
+				console.log(hiddenProperty,111,document[hiddenProperty],22,visibilityChangeEvent)
+				if (!document[hiddenProperty]) {    
+					console.log('页面激活',document.visibilityState);
+					audioE.play();
+				}else{
+					console.log('页面非激活');
+					audioE.pause();
+				}
 			}
+			document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+			audioE.addEventListener("pause",function(){
+				document.title = "pause";
+			});
+			audioE.addEventListener("play",function(){
+				document.title = "play";
+			});
+			/*document.addEventListener("visibilitychange", function() {
+				console.log( document.visibilityState );
+			});*/
 		}());
 
 			
@@ -317,14 +361,21 @@
 			Person.prototype.sayName = function(){
 				console.log(this,name);
 			};
-
+			var ppp ={p:"zxc"};
 
 			var person1 = new Person("zxc");
 			var person2 = new Person("zxb");
+			var Pe = Object.getPrototypeOf(person1);
 			console.log(person1);
 			console.log(person1.__proto__);
 			console.log(Person.prototype);
-			console.log(person1.__proto__ === Person.prototype);                //true
+			console.log(person1.__proto__ === Person.prototype);  		 //true
+			console.log(Pe === Person.prototype);               			 //true
+
+			Object.setPrototypeOf(person2,ppp);
+			console.log(person2.name);
+			console.log(person2.p);
+			console.log(Object.getPrototypeOf(person2));
 
 			console.log(person1.constructor);
 			console.log(person1.__proto__.constructor);

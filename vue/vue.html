@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+</head>
+<body>
+	<div id="app">
+		<img src="./images/logo.png" alt="">
+		<p @click="message ='message change' ">{{message}}</p>
+		<input type="text" v-model="message">
+		<button v-on:click="reverseMessage">逆转消息</button>
+		<span v-bind:title="message1">悬浮查看提示</span><button @click="toggleShow">按钮toggle</button>
+		<p v-if="isIf">v-if ="isIf" 看见我</p>
+		<p v-else>v-else</p>
+		<p v-show="isShow">v-show</p>
+		<ul>
+			<li v-for="item in books">name:{{item.name}}</li>
+		</ul>
+		<p><span v-for="(value,key) in Obj">{{key}}:{{value}}&nbsp;</span></p>
+		<ol>
+			<todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key = "item.id"></todo-item>			
+		</ol>
+
+		<div id="box">
+			<com-a></com-a>
+		</div>
+		<template id="testA">
+			<div>
+				<span>我是父级 => {{msg}}</span>
+				<com-b @child-msg="get"></com-b> <!-- 这个首先就是子组件的展示区，其次在挂载自定义事件，当子组件有数据发送的时候就会触发 -->
+			</div>
+		</template>
+		<template id="testB">
+			<div>
+				<span>子组件</span><input type="button" value="发送数据" @click="send" />
+			</div>
+		</template>
+
+
+	</div>
+	<script src="js/vue.js"></script>
+	<script>console.log(Vue,666);
+		var data1 = {a:1};
+		Vue.component('todo-item', {
+			// template: '<h3>这是个待办项</h3>'
+			props:["todo"],
+			template:'<li>{{todo.text}}</li>'
+		});
+		var comA = {
+			data() {
+				return {
+					msg:'',
+				}
+			},
+			template:'#testA',
+			methods:{
+				get(data){ //这里面接收到的参数就是子组件发送的数据
+					alert(data);
+					this.msg = data;
+				}
+			},
+			components:{
+				'comB': {
+					data(){
+						return {
+							b:'我是子组件的数据'
+						}
+					},
+					template:'#testB',
+					methods:{
+						send(){
+							this.$emit('child-msg',this.b); //这里就是把子组件的b数据通过$emit()方法发送出去
+						}
+					}
+				}
+			}
+		};
+
+
+		var app = new Vue({
+			el:"#app",
+			data:{
+				message:"hello Vue!",
+				message1:/*this.message+*/"页面加载"+new Date().toLocaleString(),
+				isIf:true,
+				isShow:true,
+				books:[
+					{name:"书1"},
+					{name:"书2"},
+					{name:"书3"},
+					{name:"书4"},
+				],
+				groceryList: [
+						{ id: 0, text: '蔬菜' },
+						{ id: 1, text: '奶酪' },
+						{ id: 2, text: '随便其它什么人吃的东西' }
+					],
+				Obj:{
+					name:"zxc",
+					age:'123',
+					class:"class"
+				}
+			},
+			components:{
+				comA
+			},
+			methods:{
+				toggleShow:function(str){
+					this.isShow = this.isShow ? false : true;
+							this.isIf = this.isIf ? false : true;
+				},
+				reverseMessage(){
+					this.message= this.message.split("").reverse().join("");
+				}
+
+			},
+			beforeCreate() {
+				console.log("beforeCreate",this.message);
+			},
+			/*beforeCreate: ()=> console.log("beforeCreate",this)		//this指向window
+			,*/
+			created:function() {
+				console.log("created",this.message,this.$el);
+			},
+			beforeMount() {
+				console.log("beforeMount",this.$el);
+			},
+			mounted() {
+				console.log("mounted",this.$el);
+			},
+			beforeUpdate(){
+				console.log("boforeUpdate")
+			},
+			updated(){
+				console.log("updated")
+			},
+			beforeDestory(){
+				console.log("beforeDestory")
+			},
+			destoryed(){
+				console.log("destoryed")
+			}
+		});
+		app.$watch("message",function(newValue,oldValue){
+			console.log("message is change")
+		},{
+			// deep:false
+		});
+		// app.$destory();
+	</script>
+</body>
+</html>

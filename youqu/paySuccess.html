@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付成功</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="./css/paySuccess.css">
+	<script src="./js/jquery-2.1.4.min.js"></script>
+	<script src="./js/base.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="head">
+			<a href=""><img src="./images/left-2.png" alt=""></a>
+			<span>支付成功</span>
+			<a href=""><img src="./images/more.png" alt=""></a>
+		</div>
+						<!-- 主体 -->
+		<div class="main">
+			<div class="pic"><img src="./images/paySuccess1.jpg" alt=""></div>
+						<!-- 收货信息 -->
+			<div class="receipt">
+				<p class="consignee">收货人：<span class="name">小明</span> <span class="tel">15512345678</span></p>
+				<p class="add">收货地址：<span class="address">这是收货地址这是收货地址这是收货地址这是收货地址</span></p>
+			</div>
+						<!-- 总价 -->
+			<div class="totalprice">
+				总价：<strong class="price">￥<span id="price">88.00</span></strong>
+			</div>
+						<!-- 查看 -->
+			<div class="btn clearfix">
+				<a href="./myOrder.html" class="view fl">查看订单</a>
+				<a href="./index.html" class="gotop fr">返回首页</a>
+			</div>
+		</div>
+	</div>
+	<script src="./js/paySuccess.js"></script>
+</body>
+</html>

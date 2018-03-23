@@ -1,0 +1,44 @@
+body, div, ul, p, li, h1, h2, h3, h4, h5, h6, a, img,input,button{ margin: 0; padding: 0; }
+body { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; color: #333; font-size: 14px;overflow-x:hidden; background: #f7f7f7; }
+a { text-decoration: none; color: #333; -webkit-tap-highlight-color: transparent;}
+ul, li { list-style: none; }
+img { /* display: block; */ border: none; max-width: 100%; vertical-align: top;outline: none;}
+input,button{border:none 0;outline: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { display: block; content: ""; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+.center { text-align: center; }
+.indent{text-indent:2em;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.c-red{color: #f95659;}
+.c-9{color: #999;}
+
+.wrapper{}
+						/* 头部 */
+#head{padding-top: .47rem;background: #ff7ba3;}
+#search{padding:0 15px;height:.58rem;display: flex;justify-content: space-between;align-items: center;}
+#search .search{width:5.7rem;height:.58rem;background: #fff;border-radius: .25rem;box-sizing: border-box;padding:3px 5px;}
+#search .search input{width:100%;height:100%;}
+#head .nav{padding:.15rem 20px 0;line-height: .7rem;color: #fff;text-align: center;}
+#head .nav ul{width:75%;}
+#head .nav li{width:33.33%;height:.7rem;float:left;}
+#head .nav li.active{color: #fc293a;}
+#head .nav .screen{width:25%;height:.7rem;}
+.nav .screen img{vertical-align: middle;margin-left:4px;width: .36rem;}
+
+
+.main{padding-top: .15rem}
+
+.main .resultItem{margin-bottom: .12rem;font-size: 12px;}
+.resultItem .pic{width:2.4rem;height:2.4rem;margin-right: .2rem;}
+.resultItem .info{width:4.7rem;}
+.resultItem .info .name{font-size: 14px;margin-bottom:5px;word-break: break-all;text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.resultItem .info .address{margin-bottom: 5px;}
+.resultItem .info .free{border:1px solid #f5d425;background: #f7f7f7;font-size: 12px;color: #f5d425;margin-bottom: 8px;}
+.resultItem .info .c-red{margin-right: 5px;}
+.resultItem .info .msg{line-height: .4rem;}
+.info .msg .c-red{font-size: 16px;}
+.info .msg img{width:.4rem;}
+

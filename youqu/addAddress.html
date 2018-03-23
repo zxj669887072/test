@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理收货地址</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="./css/addAddress.css">
+	<script src="./js/jquery-2.1.4.min.js"></script>
+	<script src="./js/base.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="head">
+			<div class="fl" style="height:100%;"><a href=""><img src="./images/left-2.png" alt="" style="vertical-align: middle;margin-bottom: 3px;width:.4rem;"></a></div><span>管理收货地址</span>
+		</div>
+		<div class="main">
+			<div id="address">
+				<div class="people"><span class="">收货人</span><input type="text" name="name" id="name"></div>
+				<div class="tel"><span>联系电话</span><input type="tel" id="tel" name="tel"></div>
+				<div class="region clearfix"><span class="fl">所在地区</span><span class="fr"><span id="region">请选择</span><img src="./images/right.png" alt=""></span></div>
+				<div class="street clearfix"><span class="fl">街道</span><span class="fr"><span id="street">请选择</span><img src="./images/right.png" alt=""></span></div>
+				<div class="detailed-address"><textarea name="detailed-address" id="detailed-address" placeholder="请填写详细地址"></textarea></div>
+			</div>
+
+			<div class="setDefault">
+				<span class="fl">设为默认</span>
+				<div class="btn fr">
+					<div class="checkbox">
+					    	<input type="checkbox" id="setBtn">
+					    	<label></label>
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<div class="blank" style="height:.87rem;"></div>
+		<div id="add">保存收货地址</div>
+	</div>
+	<script src="./js/addAddress.js"></script>
+</body>
+</html>

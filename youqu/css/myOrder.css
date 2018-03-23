@@ -1,0 +1,61 @@
+body, div, ul, p, li, h1, h2, h3, h4, h5, h6, a, img,input{ margin: 0; padding: 0; }
+body { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; color: #333; font-size: 14px;overflow-x:hidden; background: #f4f4f4; }
+a { text-decoration: none; color: #333; -webkit-tap-highlight-color: transparent;}
+ul, li { list-style: none; }
+img { /* display: block; */ border: none; max-width: 100%; vertical-align: top;outline: none;}
+input,button{border:none 0;outline: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { display: block; content: ""; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+.center { text-align: center; }
+.indent{text-indent:2em;}
+.pr{position: relative;}
+.pa{position: absolute;}
+
+.wrapper{}
+
+#head{padding-top:.34rem;background: #ff7ba3;position: fixed;top:0;left:0;right:0;z-index: 99;}
+#head .title{height:.84rem;padding:0 15px;display: flex;justify-content: space-between;align-items: center;color: #fff;}
+#head .title .search{margin-right: 5px;}
+			
+#head .nav{height:.69rem;padding:0 5px;background: #fff;}
+.nav li{float:left;width:20%;height:.69rem;line-height: .69rem;text-align: center;}
+.nav li.active{color: #ff7ba3;box-sizing: border-box;border-bottom:5px solid #ff7ba3;}
+
+					/* 订单列表 */
+.main{padding-top: 2rem;}
+.main .orderList{margin-bottom: 5px;}
+.orderList .shop{background: #fff;height:.68rem;padding:0 15px;margin-bottom:5px;display: flex;justify-content: space-between;align-items: center;}
+.orderList .shop .pic{margin-right: 5px;}
+					/* 单个订单商品详情 */
+.orderList .orderItem{padding:0 .3rem;margin-bottom:.27rem;font-size: 12px;}
+.orderItem .goodspic{width:1.38rem;height:1.38rem;margin-right: .22rem}
+.orderItem .goodsinfo{width:5.3rem;}
+.orderItem .goodsinfo .fl{width:70%;}
+.orderItem .goodsinfo .fr{width:30%;text-align: right;}
+.orderItem .goodsinfo .goodsname{height:32px;line-height: 16px;overflow: hidden;margin-bottom: 5px;}
+.orderItem .goodsinfo .spec,.orderItem .goodsinfo .del{color: #999;}
+.orderItem .goodsinfo .price,.orderItem .goodsinfo .del,.orderItem .goodsinfo .goodsnum{line-height: .4rem;}
+					/* 单个订单总计信息 */
+.orderList .total,.orderList .edit{height:.72rem;background: #fff;text-align: right;padding:0 .3rem;line-height: .72rem;}
+.orderList .total{border-bottom: 1px solid #eee;}					
+.orderList .edit .cancel,.orderList .edit .evaluate{display: inline-block;zoom:1;*display:inline;box-sizing:border-box;width:1.4rem;height:.5rem;line-height:.52rem;border:1px solid #eee;border-radius: .2rem;text-align: center;}
+.orderList .edit .evaluate{border-color: #ff7ba3;color: #ff7ba3;margin-left: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

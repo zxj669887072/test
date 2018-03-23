@@ -1,0 +1,66 @@
+body, div, ul, p, li, h1, h2, h3, h4, h5, h6, a, img,input{ margin: 0; padding: 0; }
+body { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; color: #333; font-size: 14px;overflow-x:hidden; background: #f4f4f4; }
+a { text-decoration: none; color: #333; -webkit-tap-highlight-color: transparent;}
+ul, li { list-style: none; }
+img { /* display: block; */ border: none; max-width: 100%; vertical-align: top;outline: none;}
+input,button{border:none 0;outline: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { display: block; content: ""; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+.center { text-align: center; }
+.indent{text-indent:2em;}
+.pr{position: relative;}
+.pa{position: absolute;}
+
+.wrapper{}
+					/* 头部 */
+#head{width:100%;box-sizing: border-box; padding:.44rem .2rem .12rem;border-bottom:3px solid #7bcdfc;position: fixed;top:0;background:#ff7ba3;font-size: .28rem;display: flex;justify-content: space-around;align-items: center;z-index: 99;}
+#head .pic{width:.57rem;height:.57rem;border-radius: 50%;background: #fff;overflow: hidden;}
+#head .search{width:5.7rem;height:.64rem;border-radius: .25rem;background: #fff;box-sizing: border-box;padding:.1rem .25rem;display: flex;justify-content: space-between;}
+#head .search input{border:none;width:4.5rem;}
+#head .search img{width:.4rem;height:.4rem;}
+#head .msg{width:.4rem;height:.4rem;}
+#head .msg img{width:.4rem;height:.4rem;}
+#head .msg .tip{position: absolute;top:-.13rem;right:-.08rem;z-index: 100;width:.26rem;height:.26rem;border:1px solid #fff;background: #fffe00;border-radius: 50%;font-size: .24rem;}
+
+.main{margin-top: 1.2rem;}
+					/* 今日精选 */
+#today{margin-bottom: .27rem;}
+#today .title{height:.8rem;font-size: 24px;padding-left: .15rem;line-height: .8rem;}
+#today .today-con{padding:0 .24rem;}
+#today .today-con .item:nth-child(2n+1){float:left;}
+#today .today-con .item:nth-child(2n){float:right;}
+#today .today-con .item{padding:.1rem .1rem;border:1px solid #000;width:49%;height:1.8rem;box-sizing: border-box;margin-bottom: .24rem;background: #fff;}
+#today .item .fl{width:75%;}
+#today .item .fr{width:25%;}
+#today .item .goodname{font-size: 16px;color: #000;line-height: .4rem;margin-bottom: .1rem;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;-o-text-overflow:ellipsis;
+}
+#today .item .des{font-size: 12px;background: #ed983b;color: #fff;margin-bottom: .1rem;display: inline-block;padding:0 5px;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;-o-text-overflow:ellipsis;
+}
+#today .item:nth-child(2n) .des{background: #42bceb;}
+#today .item .size{font-size: 12px;color: #999;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;-o-text-overflow:ellipsis;
+}
+#today .item img{width:100%;height:1.39rem;}
+					/* 原创推荐 */
+.list{height:1rem;border-bottom: 2px solid #f2f2f2;background: #fff;}
+#original,#recommend{width:50%;line-height: 1rem;font-size: 24px;text-align: center}
+#original img,#recommend img{vertical-align: middle;width:.5rem;height:.5rem;margin-right: 5px;}
+					/* 品牌专区 */
+.brand{background: #fff;}					
+.brand .title{font-size: 24px;padding-left: .15rem;line-height: .8rem;}
+.brand .brand_content{padding:0 .5rem;display: flex;  flex-wrap: wrap;  align-content: space-between;}
+.brand .brand_content .column{flex-basis: 100%;display: flex;justify-content: space-between;}
+.brand .brand_content .brand_item{width:1.2rem;height:.68rem;background: #ff7ba3;margin-bottom: .18rem;}
+.brand_item img{width: 100%;}
+   					/* 美妆精选 */
+.beauty .beauty_title{font-size: 24px;padding-left: .15rem;line-height: .8rem;}
+#beauty_con{padding:0 .25rem;display: flex;justify-content: space-between;}
+#beauty_con .beauty_item{width:2.25rem;height:2.45rem;background: #ff7ba3;}
+#beauty_con .beauty_item img{width:100%;}
+
+					/* 底部 */
+#foot{display: flex;justify-content: space-around;width:100%;height:.89rem;padding:.08rem 0;border-top:1px solid #f5f5f5;position: fixed;bottom:0;z-index: 99;background: #fff;}
+#foot a{display: flex;flex-direction:column;justify-content: space-between;align-items: center;font-size: .2rem;color: #333;}
+#foot a img{width:0.4rem;height:0.4rem;}
+#foot .active{color: #ff7ba3;}

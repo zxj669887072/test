@@ -1,0 +1,31 @@
+body, div, ul, p, li, h1, h2, h3, h4, h5, h6, a, img,input{ margin: 0; padding: 0; }
+body { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; color: #333; font-size: 14px;overflow-x:hidden; background: #f4f4f4; }
+a { text-decoration: none; color: #333; -webkit-tap-highlight-color: transparent;}
+ul, li { list-style: none; }
+img { /* display: block; */ border: none; max-width: 100%; vertical-align: top;outline: none;}
+input,button{border:none 0;outline: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { display: block; content: ""; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+.center { text-align: center; }
+.indent{text-indent:2em;}
+.pr{position: relative;}
+.pa{position: absolute;}
+
+.wrapper{}
+
+#head{padding:.34rem .3rem 0;height:.82rem;background: #ff7ba3;color:#fff;font-size: 16px; display: flex;justify-content: space-between;align-items: center;}
+
+.main .pic{height:2rem;}
+					/* 收货信息 */
+.main .receipt{padding:.2rem .3rem;background: #fff;border-bottom: 2px solid #f7f7f7;}
+.main .receipt p{line-height: .4rem;}
+.receipt .consignee{font-size: 16px;margin-bottom: 5px;}
+					/* 总价 */
+.main .totalprice{height:1.2rem;line-height: 1.2rem;font-size: 16px;padding:0 .3rem;background: #fff;}
+.totalprice strong{color: #fc3a37;margin-left: 10px;}
+.totalprice #price{font-size: 24px;}
+					/* 操作 */
+.main .btn{height:.7rem;padding:0 .6rem .38rem;background: #fff;}
+.btn a{display: inline-block;zoom:1;*display: inline;width:2.72rem;height:.7rem;line-height:.69rem;box-sizing: border-box;border:2px solid #777;border-radius: .28rem;text-align: center;font-size: 16px;}
