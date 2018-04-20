@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>vue</title>
+	<style>
+		#testA{display: none;}
+	</style>
 </head>
 <body>
 	<div id="app">
@@ -25,13 +28,13 @@
 		<div id="box">
 			<com-a></com-a>
 		</div>
-		<template id="testA">
+		<template id="testA" >
 			<div>
 				<span>我是父级 => {{msg}}</span>
 				<com-b @child-msg="get"></com-b> <!-- 这个首先就是子组件的展示区，其次在挂载自定义事件，当子组件有数据发送的时候就会触发 -->
 			</div>
 		</template>
-		<template id="testB">
+		<template id="testB" v-if="bshow">
 			<div>
 				<span>子组件</span><input type="button" value="发送数据" @click="send" />
 			</div>
@@ -45,7 +48,10 @@
 		Vue.component('todo-item', {
 			// template: '<h3>这是个待办项</h3>'
 			props:["todo"],
-			template:'<li>{{todo.text}}</li>'
+			template:'<li>{{todo.text}}</li>',
+			mounted:function(){
+				console.log(this.todo,50)
+			}
 		});
 		var comA = {
 			data() {
@@ -85,6 +91,7 @@
 				message1:/*this.message+*/"页面加载"+new Date().toLocaleString(),
 				isIf:true,
 				isShow:true,
+				bshow:false,
 				books:[
 					{name:"书1"},
 					{name:"书2"},

@@ -33,6 +33,7 @@
 		.box1{visibility: hidden;}
 		.flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
 		/*option:selected{color:red;}*/
+		.box3{width:300px;height:300px;overflow-y:scroll; }
 	</style>
 </head>
 <body>
@@ -50,6 +51,44 @@
 		<div class="box1">
 			<img src="01.png" alt="">
 			<span>自行车</span>
+		</div>
+		<div class="box3">
+			<p>asdfghklthis.$router.push('/xxx ')
+这个编程式导航都作用就是跳转，比如我们判断用户名和密码正确时，需要跳转到用户中心页面或者首页，都用到这个编程的方法来操作路由。
+
+我们设置一个按钮，点击按钮后回到站点首页。
+
+1.先编写一个按钮，在按钮上绑定goHome( )方法。
+
+
+<button @click="goHome">回到首页</button>
+1
+<button @click="goHome">回到首页</button>
+2.在</\script>模块里加入goHome方法，并用this.$router.push('/')导航到首页
+‘exportasd 1default {’
+  name: 'app',
+  methods:{
+    goback(){
+      this.$router.go(-1);
+    },
+    goHome(){
+      this.$router.push('/');
+    }
+  }
+}
+
+export default {
+  name: 'app',
+  methods:{
+    goback(){
+      this.$router.go(-1);
+    },
+    goHome(){
+      this.$router.push('/');
+    }
+  }
+}
+ </p>
 		</div>
 		<input type="text" name="" placeholder="input"><input type="button" name="" value="button"><input type="reset" name="">
 		<a href="baidu.com" attr="www"></a><a href="javascript:void(0);">void</a>
